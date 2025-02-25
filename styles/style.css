@@ -38,7 +38,7 @@ body {
 .solution-box {
   width: 500px; /* Justera bredden efter behov */
   background-color: #d9edf7; /* Ljusblå bakgrund */
-  border: 1px solid #000; /* Tunn svart kant */
+  border: 5px solid #000; /* Tunn svart kant */
   border-radius: 15px; /* Rundade hörn */
   padding: 15px; /* Inre marginal */
   margin: 10px 0; /* Yttre marginal */
