@@ -35,6 +35,19 @@ body {
   margin-top: 20px; /* Justera värdet efter behov */
 }
 
+.solution-box {
+  width: 300px; /* Justera bredden efter behov */
+  background-color: #d9edf7; /* Ljusblå bakgrund */
+  border: 1px solid #000; /* Tunn svart kant */
+  border-radius: 10px; /* Rundade hörn */
+  padding: 15px; /* Inre marginal */
+  margin: 10px 0; /* Yttre marginal */
+}
+
+button {
+  margin: 0.25rem;
+}
+
 h1 { font-family: Georgia, serif; font-size: 24px; font-style: bold; font-variant: normal; font-weight: 700; line-height: 26.4px; color: black;} 
 hu { font-family: Georgia, serif; font-size: 24px; font-style: bold; font-variant: normal; font-weight: 700; line-height: 26.4px; color: black;} 
 h2 { font-family: Georgia, serif; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } 
