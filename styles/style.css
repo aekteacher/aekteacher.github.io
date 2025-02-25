@@ -39,7 +39,7 @@ body {
   width: 500px; /* Justera bredden efter behov */
   background-color: #d9edf7; /* Ljusblå bakgrund */
   border: 1px solid #000; /* Tunn svart kant */
-  border-radius: 5px; /* Rundade hörn */
+  border-radius: 15px; /* Rundade hörn */
   padding: 15px; /* Inre marginal */
   margin: 10px 0; /* Yttre marginal */
   margin-left: 25px; /* Flytta in rutan 25px från vänster */
