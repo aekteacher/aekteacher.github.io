@@ -2,8 +2,24 @@ body {
   background-color: lightblue;
 }
 
+html {
+  font-size: 13px;
+  margin: 1rem 1rem;
+  line-height: 2rem;
+  color: black;
+  max-width: 1050px;
+}
+
+body {
+  background-color: #F0F0F0;
+  font-family: Georgia, serif;
+  font-size: 1.25rem;
+  width: 95%;
+  overflow: auto;
+}
 
 h1 { font-family: Georgia, serif; font-size: 24px; font-style: bold; font-variant: normal; font-weight: 700; line-height: 26.4px; color: black;} 
+hu { font-family: Georgia, serif; font-size: 24px; font-style: bold; font-variant: normal; font-weight: 700; line-height: 26.4px; color: black;} 
 h2 { font-family: Georgia, serif; font-size: 20px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } 
 h3 { font-family: Georgia, serif; font-size: 14px; font-style: italic; font-variant: normal; font-weight: 700; line-height: 15.4px; } 
 p { font-family: Georgia, serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } 
