@@ -38,8 +38,26 @@ body {
 .solution-box {
   width: 500px; /* Justera bredden efter behov */
   background-color: #d9edf7; /* Ljusblå bakgrund */
-  border: 5px solid #000; /* Tunn svart kant */
-  border-radius: 15px; /* Rundade hörn */
+  border: 1px solid #000; /* Tunn svart kant */
+  border-radius: 5px; /* Rundade hörn */
+  padding: 15px; /* Inre marginal */
+  margin: 10px 0; /* Yttre marginal */
+  margin-left: 25px; /* Flytta in rutan 25px från vänster */
+}
+
+.definition-box {
+  background-color: #E8F5E9; /* Ljusgrön bakgrund */
+  border: 1px solid #000; /* Tunn svart kant */
+  border-radius: 5px; /* Rundade hörn */
+  padding: 15px; /* Inre marginal */
+  margin: 10px 0; /* Yttre marginal */
+  margin-left: 25px; /* Flytta in rutan 25px från vänster */
+}
+
+.theorem-box {
+  background-color: #FFF9C4; /* Ljusgul bakgrund */
+  border: 1px solid #000; /* Tunn svart kant */
+  border-radius: 5px; /* Rundade hörn */
   padding: 15px; /* Inre marginal */
   margin: 10px 0; /* Yttre marginal */
   margin-left: 25px; /* Flytta in rutan 25px från vänster */
