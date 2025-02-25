@@ -36,7 +36,8 @@ body {
 }
 
 .solution-box {
-  width: 500px; /* Justera bredden efter behov */
+  width: 100%; /* Låt rutan skala med fönstret */
+  max-width: 600px; /* Maximal bredd */
   background-color: #d9edf7; /* Ljusblå bakgrund */
   border: 1px solid #000; /* Tunn svart kant */
   border-radius: 5px; /* Rundade hörn */
