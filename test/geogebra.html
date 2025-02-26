@@ -30,105 +30,52 @@
         
         
         <!-- GeoGebra -->
-        <meta name=viewport content="width=device-width,initial-scale=1">
-        <meta charset="utf-8"/>
         <script src="https://www.geogebra.org/apps/deployggb.js"></script>
-        
 		<script src="navigation.js"></script>
 		<script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
 		<script src="https://code.jquery.com/ui/1.8.21/jquery-ui.min.js"></script>
         <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-		<style>
-            <style>
-                body div.ui-dialog {
-                z-index:3!important;
-                }
-                body .ui-dialog .ui-dialog-content{
-                padding:5px;
-                overflow:hidden;
-                }
-                body .ui-dialog .ui-dialog-title{
-                color: rgba(0,0,0,0.87);
-                font-family: Roboto,sans-serif;
-                font-size: 120%;
-                font-weight: 400;
-                line-height: 1;
-                margin: 6px 0px;
-                }
-                body .ui-dialog .ui-dialog-title img{
-                vertical-align: middle;
-                margin-left: 16px;
-                padding-bottom: 2px;
-                opacity: 0.6;
-                }
-                body .ui-dialog .ui-dialog-title img:hover{
-                opacity: 0.4;
-                }
-                body .ui-widget-header {
-                background-color:#fff;
-                border-color:#fff;
-                
-                }
-                body .ui-widget-header .ui-icon{
-                background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTkgNi40MUwxNy41OSA1IDEyIDEwLjU5IDYuNDEgNSA1IDYuNDEgMTAuNTkgMTIgNSAxNy41OSA2LjQxIDE5IDEyIDEzLjQxIDE3LjU5IDE5IDE5IDE3LjU5IDEzLjQxIDEyeiIvPjxwYXRoIGZpbGw9Im5vbmUiIGQ9Ik0wIDBoMjR2MjRIMHoiLz48L3N2Zz4=");
-                background-size: 24px;
-                background-position: -4px 0px;
-                opacity: 0.87;
-                width: 24px;
-                height: 24px;
-                }
-                body .ui-widget-header .ui-icon:hover{
-                color: rgba(0,0,0,.54);
-                }
-                body .ui-dialog-titlebar-close.ui-state-hover{
-                border: none;
-                background: #fff;
-                opacity: 0.54;
-                }
-                body {
-                overflow:hidden;
-                }
-                
-                
-            </style>
-            <script type="text/javascript" src="https://www.geogebra.org/apps/deployggb.js"></script>
-            <script src="../javascript/geogebra.js"></script>
-        </head>
-        <body>
-            <header class="header-box">
-                <div class="dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Meny
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="../index.html">Start</a>
-                        <a class="dropdown-item" href="index.html">Tillbaka</a>
-                        <a class="dropdown-item" href="#">Länk 3</a>
-                    </div>
+		<script type="text/javascript" src="https://www.geogebra.org/apps/deployggb.js"></script>
+		<!-- GeoGebra local js -->
+		<script src="../javascript/geogebra.js"></script>
+		<!-- GeoGebra local style-->
+		<link rel="stylesheet" href="../css/geogebra.css">
+           
+    </head>
+    <body>
+        <header class="header-box">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Meny
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="../index.html">Start</a>
+                    <a class="dropdown-item" href="index.html">Tillbaka</a>
+                    <a class="dropdown-item" href="#">Länk 3</a>
                 </div>
-                <h1 class="header-title">GeoGebra Example</h1>
-                <div class="header-area"><em>Testning</em></div>
-            </header>
-            <h1> Adding GeoGebra </h1>
-            <div id="ggb-element"></div>
-            <h5>GeoGebra Classic Perspectives</h5>
-            <p class="text">Choose the Classic perspective you want to show in a popup:</p>
-            <div class="apps">
-                <a href="#" onclick="perspective('1');return false;" class="appBtn narrow app-icon-graphing">Graphing Calculator</a>
-                <a href="#" onclick="perspective('2');return false;" class="appBtn narrow app-icon-geometry">Geometry</a>
-                <a href="#"  onclick="perspective('3');return false;" class="appBtn narrow app-icon-spreadsheet">Spreadsheet</a>
-                <a href="#"  onclick="perspective('4');return false;" class="appBtn narrow app-icon-cas">CAS</a>
-                <a href="#"  onclick="perspective('5');return false;" class="appBtn narrow app-icon-3d">3D Geometry</a>
-                <a href="#"  onclick="perspective('6');return false;" class="appBtn narrow app-icon-probability">Probability</a>
             </div>
-            
-            
-            <div id="dialog" title="GeoGebra Math Apps">
-                <div id="applet_container" style="min-width:800px;min-height:600px"></div>
-            </div>
-            
-            
+            <h1 class="header-title">GeoGebra Example</h1>
+            <div class="header-area"><em>Testning</em></div>
+        </header>
+        
+        <h1> Adding GeoGebra </h1>
+        
+        <div id="ggb-element"></div>
+        
+        <h5>GeoGebra Classic Perspectives</h5>
+        <p class="text">Choose the Classic perspective you want to show in a popup:</p>
+        <div class="apps">
+            <a href="#" onclick="perspective('1');return false;" class="appBtn narrow app-icon-graphing">Graphing Calculator</a>
+            <a href="#" onclick="perspective('2');return false;" class="appBtn narrow app-icon-geometry">Geometry</a>
+            <a href="#"  onclick="perspective('3');return false;" class="appBtn narrow app-icon-spreadsheet">Spreadsheet</a>
+            <a href="#"  onclick="perspective('4');return false;" class="appBtn narrow app-icon-cas">CAS</a>
+            <a href="#"  onclick="perspective('5');return false;" class="appBtn narrow app-icon-3d">3D Geometry</a>
+            <a href="#"  onclick="perspective('6');return false;" class="appBtn narrow app-icon-probability">Probability</a>
         </div>
-		
-    </body>
+        <div id="dialog" title="GeoGebra Math Apps">
+            <div id="applet_container" style="min-width:800px;min-height:600px"></div>
+        </div>
+
+    
+</body>
 </html>
