@@ -55,6 +55,15 @@ body {
   margin-left: 25px; /* Flytta in rutan 25px från vänster */
 }
 
+.card {
+  background-color: #E8F5E9; /* Ljusgrön bakgrund */
+  border: 1px solid #000; /* Tunn svart kant */
+  border-radius: 5px; /* Rundade hörn */
+  padding: 15px; /* Inre marginal */
+  margin: 10px 0; /* Yttre marginal */
+  margin-left: 25px; /* Flytta in rutan 25px från vänster */
+}
+
 .theorem-box {
   background-color: #FFF9C4; /* Ljusgul bakgrund */
   border: 1px solid #000; /* Tunn svart kant */
@@ -123,7 +132,7 @@ h3 {
   line-height: 15.4px; 
 } 
 
-p { 
+p,li { 
   font-family: Georgia, serif; 
   font-size: 14px; 
   font-style: normal; 
