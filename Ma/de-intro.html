@@ -3,7 +3,7 @@
     <head>
         <title>Introduktion till Differentialekvationer</title>
         <!-- style -->
-        <link rel="stylesheet" href="../../css/style.css">
+        <link rel="stylesheet" href="../css/style.css">
         
         <!-- något! -->
         <meta charset="utf-8">
@@ -29,43 +29,88 @@
         
 	</head>
     <body>
-		<section>
-			<header class="header-box">
-				<div class="dropdown">
-					<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						Meny
-					</button>
-					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-						<a class="dropdown-item" href="/index.html">Start</a>
-						<a class="dropdown-item" href="../index.html">Tillbaka en nivå</a>
-						<a class="dropdown-item" href="../../index.html">Tillbaka två nivåer</a>
-					</div>
+		<header class="header-box">
+			<div class="dropdown">
+				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Meny
+				</button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" href="/index.html">Start</a>
+					<a class="dropdown-item" href="../index.html">Tillbaka en nivå</a>
+					<a class="dropdown-item" href="../../index.html">Tillbaka två nivåer</a>
 				</div>
-				<h1 class="header-title">Introduktion till DE</h1>
-				<div class="header-area"><em>Testning</em></div>
-			</header>
-			
-			<div class="definition-box">
-				<h4>Definition: Något som är</h4>
-				<p>En definition är en exakt beskrivning av ett begrepp eller en term.</p>
 			</div>
+			<h1 class="header-title">Introduktion till DE</h1>
+			<div class="header-area"><em>Testning</em></div>
+		</header>
+		<section>
+			<h1>Vad är en differentialekvation?</h1>
+			<p>De första ekvationerna vi löste hade ett värde som uppfyllde ekvationen. Exempelvis \(2x-5=15\) har lösningen \(x=10\). Efter det ökades det på till andragradsekvationer som hade noll eller två reella tal som lösning till en ekvation. Efter det kom trigonometriska ekvationer som först hade två lösningar i ett visst intervall för att sedan fyllas på med oänligt många lösningar.</p>
+			<p>En differentialekvation (vi kan kalla det <i>DE</i>) är en ekvation som har en funktion som lösning!</p>
+			<h4>Exempel: Differentialekvationer</h4>
+			<p>Nedan är olika exempel på hur DE kan se ut.</p>
+			<div class="solution-box">
+				<p>\( y'+2y=0 \)</p>
+				<p>\( y''=x^2+1 \)</p>
+				<p>\( y'+x^2\cdot y=3x \)</p>
+				<p>\( y''-3y=\sin(2x) \)</p>
+				<p>\( \sqrt{y'+2y^2} \cdot e^{x^2}=0 \)</p>
+			</div>
+			<p>Olika typer av DE har olika lösningstekniker. Många av våra grundstrategier för att lösa vanliga ekvationer gäller även för DE. </p>
+			<ul>
+				<li>Vid ekvationsslöning så måste vi först identifiera vilken typ av ekvation det är och sedan välja lämplig metod för att lösa den.</li>
+				<li>När vi har en lösning så kan vi kontrollera om den stämmer gneom att pröva den i ursprungsekvationen.</li>
+			</ul>
 			
-			<div class="theorem-box">
-				<h4>Sats: Ett efternamn</h4>
-				<p>En sats är ett matematiskt påstående som kan bevisas utifrån givna axiom och definitioner.</p>
+			<p>Första steget är att visa om en lösning är en lösning till en DE. Det kallas för att verifiera lösningen.</p>
+			<h4>Exempel</h4>
+			<p>Visa att \(y=10e^{\frac{5}{2}x}-\frac{2}{5}x-\frac{4}{25}\) är en lösning till differentialekvationen \(2y'-5y=2x\).</p><span class="new-line"></span>
+			<button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#ex_1" aria-expanded="false" aria-controls="ex_1">
+				Lösning
+			</button>
+			<div id="ex_1" class="collapse">
+				<div class="solution-box">
+					<p>Vi visar det genom att jämföra \(VL\) och \(HL\).</p>
+					<p>Eftersom vi har \(y'\) så behövs derivatan.</p>
+					<p>\(y=10e^{\frac{5}{2}x}-\frac{2}{5}x-\frac{4}{25}\)</p>
+					<p>\(y'=\frac{5}{2}\cdot 10e^{\frac{5}{2}x}-\frac{2}{5}x=25e^{\frac{5}{2}x}-\frac{2}{5}\)</p>
+					<p>\( \)</p>
+					<p>\( \begin{array}{rcl}
+						VL: 2y'-5y & = & 2\cdot \left(25e^{\frac{5}{2}x}-\frac{2}{5}\right) -5\cdot \left( 10e^{\frac{5}{2}x}-\frac{2}{5}x-\frac{4}{25} \right)\\
+						& = & 2\cdot 25e^{\frac{5}{2}x} - 2\cdot \frac{2}{5} -5\cdot 10e^{\frac{5}{2}x} +5\cdot \frac{2}{5}x +5\cdot \frac{4}{25}\\
+						& = & 50e^{\frac{5}{2}x}- \frac{4}{5} -50e^{\frac{5}{2}x} +2x + \frac{4}{5}\\
+						& = & 0e^{\frac{5}{2}x} --50e^{\frac{5}{2}x}- \frac{4}{5}+ \frac{4}{5}+2x \\
+						& = & 2x\\
+					\end{array} \) </p>
+					<p>\(HL: 2x \)</p>
+					<p>Då \(VL=HL\) stämmer det att  \(y=10e^{\frac{5}{2}x}-\frac{2}{5}x-\frac{4}{25}\) är en lösning till differentialekvationen \(2y'-5y=2x\).</p>
+				</div>
 			</div>
 			
 			<h4>Exempel</h4>
-			Skapa en funktion som uppfyller \( f: \mathbb{Z} \rightarrow \mathbb{R} \).<span class="new-line"></span>
-			<button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#u1_l" aria-expanded="false" aria-controls="collapseExample">
+			<p>Visa att \(y=10e^{\frac{5}{2}x}-\frac{2}{5}x-\frac{4}{25}\) är en lösning till differentialekvationen \(2y'-5y=2x\).</p><span class="new-line"></span>
+			<button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#ex_2" aria-expanded="false" aria-controls="ex_2">
 				Lösning
 			</button>
-			<div id="u1_l" class="collapse">
+			<div id="ex_2" class="collapse">
 				<div class="solution-box">
-					<p>Låt \( f(z): \mathbb{Z} \rightarrow \mathbb{R} \) vara funktionen \(f(z)=\mathrm{Re}(z)\) där \(z\in \mathbb{Z}\).</p>
-					<p>Då kommer definitionsmängden vara hela komplexa talmängden och värdemängden är hela reella talmängden vilket också är funktionens målbild.</p>
+					<p>Vi visar det genom att jämföra \(VL\) och \(HL\).</p>
+					<p>Eftersom vi har \(y'\) så behövs derivatan.</p>
+					<p>\(y=10e^{\frac{5}{2}x}-\frac{2}{5}x-\frac{4}{25}\)</p>
+					<p>\(y'=\frac{5}{2}\cdot 10e^{\frac{5}{2}x}-\frac{2}{5}x=25e^{\frac{5}{2}x}-\frac{2}{5}\)</p>
+					<p>\( \)</p>
+					<p>\( \begin{array}{rcl}
+						VL: 2y'-5y & = & 2\cdot \left(25e^{\frac{5}{2}x}-\frac{2}{5}\right) -5\cdot \left( 10e^{\frac{5}{2}x}-\frac{2}{5}x-\frac{4}{25} \right)\\
+						& = & 2\cdot 25e^{\frac{5}{2}x} - 2\cdot \frac{2}{5} -5\cdot 10e^{\frac{5}{2}x} +5\cdot \frac{2}{5}x +5\cdot \frac{4}{25}\\
+						& = & 50e^{\frac{5}{2}x}- \frac{4}{5} -50e^{\frac{5}{2}x} +2x + \frac{4}{5}\\
+						& = & 0e^{\frac{5}{2}x} --50e^{\frac{5}{2}x}- \frac{4}{5}+ \frac{4}{5}+2x \\
+						& = & 2x\\
+					\end{array} \) </p>
+					<p>\(HL: 2x \)</p>
+					<p>Då \(VL=HL\) stämmer det att  \(y=10e^{\frac{5}{2}x}-\frac{2}{5}x-\frac{4}{25}\) är en lösning till differentialekvationen \(2y'-5y=2x\).</p>
 				</div>
 			</div>
+		
 		</section>
 		<section>
 			<h2>Uppgifter</h2>
@@ -93,7 +138,7 @@
 							<p>Eftersom det är \(ax^2 + bx + c = 0\), använd \(pq\)-formeln.</p>
 						</div>
 					</div>
-					<div id="u1_l" class="collapse">
+					<div id="u1_l" class="collapse", background-color: "#f8f9fa">
 						<div class="card card-body">
 							<p>Eftersom det är \(ax^2 + bx + c = 0\), använd \(pq\)-formeln. \(x=\frac{-p}{2}\pm \sqrt{\left( \frac{p}{2}\right) ^2 -q}\)</p>
 							<p>$$a+xb=0$$</p>

@@ -46,6 +46,18 @@ body {
   margin-left: 25px; /* Flytta in rutan 25px från vänster */
 }
 
+.tips-box {
+  width: 100%; /* Låt rutan skala med fönstret */
+  max-width: 600px; /* Maximal bredd */
+  background-color: #124599; /* Ljusblå bakgrund */
+  border: 1px solid #000; /* Tunn svart kant */
+  border-radius: 5px; /* Rundade hörn */
+  padding: 15px; /* Inre marginal */
+  margin: 10px 0; /* Yttre marginal */
+  margin-left: 25px; /* Flytta in rutan 25px från vänster */
+}
+
+
 .definition-box {
   background-color: #E8F5E9; /* Ljusgrön bakgrund */
   border: 1px solid #000; /* Tunn svart kant */
@@ -101,12 +113,12 @@ body {
 }
 
 button {
-  margin: 0.25rem;
+  margin: 10px 0; /* Yttre marginal */
 }
 
 h1 { 
   font-family: Georgia, serif; 
-  font-size: 24px; 
+  font-size: 22px; 
   font-style: bold; 
   font-variant: normal; 
   font-weight: 700; 
@@ -116,7 +128,7 @@ h1 {
 
 h2 { 
   font-family: Georgia, serif; 
-  font-size: 20px; 
+  font-size: 19px; 
   font-style: normal; 
   font-variant: normal; 
   font-weight: 700; 
@@ -125,7 +137,7 @@ h2 {
 
 h3 { 
   font-family: Georgia, serif; 
-  font-size: 14px; 
+  font-size: 17px; 
   font-style: italic; 
   font-variant: normal; 
   font-weight: 700; 
@@ -133,8 +145,8 @@ h3 {
 } 
 
 p,li { 
-  font-family: Georgia, serif; 
-  font-size: 14px; 
+  font-family: Cambria, serif; 
+  font-size: 16px; 
   font-style: normal; 
   font-variant: normal; 
   font-weight: 400; 
