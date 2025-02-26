@@ -1,0 +1,24 @@
+class CommonHeader extends HTMLElement {
+
+    connectedCallback() {
+        this.innerHTML = `
+   		<div>
+<header class="header-box">
+			<div class="dropdown">
+				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+					Meny
+                    </button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" href="/index.html">Start</a>
+					<a class="dropdown-item" href="../index.html">Tillbaka en nivå</a>
+					<a class="dropdown-item" href="../../index.html">Tillbaka två nivåer</a>
+				</div>
+			</div>
+			<h1 class="header-title">Introduktion till DE</h1>
+			<div class="header-area"><em>Testning</em></div>
+		</header>
+        </div>
+  `
+    }
+}
+customElements.define('common-header', CommonHeader)
