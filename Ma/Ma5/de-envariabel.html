@@ -2,7 +2,7 @@
 <html>
 
 <head>
-	<title>Repetition Derivata</title>
+	<title>n:te ordningens envariabel DE</title>
 	<!-- style -->
 	<link rel="stylesheet" href="../../css/style.css">
 
@@ -51,70 +51,27 @@
 					<a class="dropdown-item" href="../../index.html">Tillbaka två nivåer</a>
 				</div>
 			</div>
-			<h1 class="header-title">Repetition Derivata</h1>
+			<h1 class="header-title"><i>n</i>:te ordningens envariabel differentiealekvation</h1>
 			<div class="header-area"><em>Testning</em></div>
 		</header>
 	</div>
+
+
 	<section>
-		<h1>Repetition Derivata</h1>
-		<p>Hur stor koll har du på deriveringsreglerna?</p>
-		<p></p>
-		<div class="definition-box">
-            <h4>Definition: Derivatans definition</h4>
-            <p>$$ \lim_{h \to 0} \frac{f(x+h)-f(x)}{h} $$</p>
-        </div>
-		<h4>Exempel</h4>
-		<p>Skapa en lista över de oika typerna avv funktioner du arbetat med, ange både namn och exempel.</p>
-		<span class="new-line"></span>
-		<button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#ex_1"
-			aria-expanded="false" aria-controls="ex_1">
-			Deriveringsregler
-		</button>
-		<div id="ex_1" class="collapse">
-			<div class="solution-box">
-				<p>Derivering av:</p>
-				<ul>
-					<li>Polynom \(f(x)=x^2+3\)</li>
-					<li>Exponentialfunktioner \(f(x)=e^x \)</li>
-					<li>Trigonometriska funktioner \( f(x)=\sin(x) \)</li>
-					<li>Potensfunktioner \(f(x)=3\cdot 2^x \)</li>
-					<li>Logaritmer \( f(x)=\ln(x) \)</li>
-					<li>Sammansatta funktioner \( f(x)=\cos(x^2+e^x) \)</li>
-					<li>Produkter av olika funktioner (produktregeln) \( f(x)=x^2\cdot \sin(x) \)</li>
-					<li>Kvoter av olika funktioner (kvotregeln) \( f(x)=\frac{x^2}{\cos(x)} \)</li>
-				</ul>
-			</div>
-		</div>
-		<p></p>
-		<span class="new-line"></span>
-		<button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#ex_2"
-			aria-expanded="false" aria-controls="ex_1">
-			Deriveringsregler
-		</button>
-		<div id="ex_2" class="collapse">
-			<div class="solution-box">
-				<p>Derivering av:</p>
-				<ul>
-					<li>Polynom</li>
-					<li>Exponentialfunktioner</li>
-					<li>Trigonometriska funktioner</li>
-					<li>Potensfunktioner</li>
-					<li>Logaritmer</li>
-					<li>Sammansatta funktioner</li>
-					<li>Produkter av olika funktioner (produktregeln)</li>
-					<li>Kvoter av olika funktioner (kvotregeln)</li>
-				</ul>
-			</div>
-		</div>
+		<h1><i>n</i>:te ordningens envariabel differentiealekvation</h1>
+		<p>De första ekvationerna vi löste hade ett värde som uppfyllde ekvationen. Exempelvis \(2x-5=15\) har lösningen
+			\(x=10\). Efter det ökades det på till andragradsekvationer som hade noll eller två reella tal som lösning
+			till en ekvation. Efter det kom trigonometriska ekvationer som först hade två lösningar i ett visst
+			intervall för att sedan fyllas på med oänligt många lösningar.</p>
 		<p>En differentialekvation (vi kan kalla det <i>DE</i>) är en ekvation som har en funktion som lösning!</p>
 		<h4>Exempel: Differentialekvationer</h4>
 		<p>Nedan är olika exempel på hur DE kan se ut.</p>
 		<div class="solution-box">
-			<p>\( \D(x^n) \)</p>
-			<p>\( y''=x^2+1 \)</p>
-			<p>\( y'+x^2\cdot y=3x \)</p>
-			<p>\( y''-3y=\sin(2x) \)</p>
-			<p>\( \sqrt{y'+2y^2} \cdot e^{x^2}=0 \)</p>
+			<p>\( y'+2y=0 \) : Första ordningen linjär homogen differentialekvation </p>
+			<p>\( y''=x^2+1 \) : Andra ordningens icke-homogen differentialekvation</p>
+			<p>\( y'+x^2\cdot y=3x \) : Första ordningens linjära icke-homogen differentialekvation</p>
+			<p>\( y''-3y=\sin(2x) \) : Andra ordningens linjära icke-homogen differentialekvation</p>
+			<p>\( \sqrt{y'}+2y^2 \cdot e^{x^2}=0 \) : Första ordningens ickelinjära differentialekvation</p>
 		</div>
 		<p>Olika typer av DE har olika lösningstekniker. Många av våra grundstrategier för att lösa vanliga ekvationer
 			gäller även för DE. </p>
@@ -127,7 +84,36 @@
 
 		<p>Första steget är att visa om en lösning är en lösning till en DE. Det kallas för att verifiera lösningen.</p>
 		<h4>Exempel</h4>
-
+		<p>Visa att \(y=10e^{\frac{5}{2}x}-\frac{2}{5}x-\frac{4}{25}\) är en lösning till differentialekvationen
+			\(2y'-5y=2x\).</p><span class="new-line"></span>
+		<button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#ex_1"
+			aria-expanded="false" aria-controls="ex_1">
+			Lösning
+		</button>
+		<div id="ex_1" class="collapse">
+			<div class="solution-box">
+				<p>Vi visar det genom att jämföra \(VL\) och \(HL\).</p>
+				<p>Eftersom vi har \(y'\) så behövs derivatan.</p>
+				<p>\(y=10e^{\frac{5}{2}x}-\frac{2}{5}x-\frac{4}{25}\)</p>
+				<p>\(y'=\frac{5}{2}\cdot 10e^{\frac{5}{2}x}-\frac{2}{5}x=25e^{\frac{5}{2}x}-\frac{2}{5}\)</p>
+				<p>\( \)</p>
+				<p>\( \begin{array}{rcl}
+					VL: 2y'-5y & = & 2\cdot \left(25e^{\frac{5}{2}x}-\frac{2}{5}\right) -5\cdot \left(
+					10e^{\frac{5}{2}x}-\frac{2}{5}x-\frac{4}{25} \right)\\
+					& = & 2\cdot 25e^{\frac{5}{2}x} - 2\cdot \frac{2}{5} -5\cdot 10e^{\frac{5}{2}x} +5\cdot \frac{2}{5}x
+					+5\cdot \frac{4}{25}\\
+					& = & 50e^{\frac{5}{2}x}- \frac{4}{5} -50e^{\frac{5}{2}x} +2x + \frac{4}{5}\\
+					& = & 0e^{\frac{5}{2}x} --50e^{\frac{5}{2}x}- \frac{4}{5}+ \frac{4}{5}+2x \\
+					& = & 2x\\
+					\end{array} \) </p>
+				<p>\(HL: 2x \)</p>
+				<p>Då \(VL=HL\) stämmer det att \(y=10e^{\frac{5}{2}x}-\frac{2}{5}x-\frac{4}{25}\) är en lösning till
+					differentialekvationen \(2y'-5y=2x\).</p>
+				<p align="right">
+					\(\square \)
+				</p>
+			</div>
+		</div>
 
 		<h4>Exempel</h4>
 		<p>Visa att \(y=10e^{\frac{5}{2}x}-\frac{2}{5}x-\frac{4}{25}\) är en lösning till differentialekvationen
@@ -155,6 +141,9 @@
 				<p>\(HL: 2x \)</p>
 				<p>Då \(VL=HL\) stämmer det att \(y=10e^{\frac{5}{2}x}-\frac{2}{5}x-\frac{4}{25}\) är en lösning till
 					differentialekvationen \(2y'-5y=2x\).</p>
+				<p align="right">
+					\(\square \)
+				</p>
 			</div>
 		</div>
 

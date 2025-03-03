@@ -40,12 +40,36 @@ body {
   /* Justera värdet efter behov */
 }
 
+/* ändra storleken på matematikskrift*/
+.MathJax {
+  font-size: 0.95em !important;
+}
+
 .solution-box {
   width: 100%;
   /* Låt rutan skala med fönstret */
   max-width: 600px;
   /* Maximal bredd */
-  background-color: #d9edf7;
+  background-color: #a9d8f0;
+  /* Ljusblå bakgrund */
+  border: 1px solid #000;
+  /* Tunn svart kant */
+  border-radius: 5px;
+  /* Rundade hörn */
+  padding: 15px;
+  /* Inre marginal */
+  margin: 10px 0;
+  /* Yttre marginal */
+  margin-left: 25px;
+  /* Flytta in rutan 25px från vänster */
+}
+
+.proof-box {
+  width: 100%;
+  /* Låt rutan skala med fönstret */
+  max-width: 600px;
+  /* Maximal bredd */
+  background-color: #ffe281;
   /* Ljusblå bakgrund */
   border: 1px solid #000;
   /* Tunn svart kant */
@@ -64,7 +88,7 @@ body {
   /* Låt rutan skala med fönstret */
   max-width: 600px;
   /* Maximal bredd */
-  background-color: #124599;
+  background-color: #a76ccf;
   /* Ljusblå bakgrund */
   border: 1px solid #000;
   /* Tunn svart kant */
@@ -94,7 +118,7 @@ body {
 }
 
 .card {
-  background-color: #e8f5e9;
+  background-color: #ff00d0;
   /* Ljusgrön bakgrund */
   border: 1px solid #000;
   /* Tunn svart kant */
@@ -127,7 +151,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f8f9fa;
+  background-color: #fecbcb;
   padding: 10px 20px;
   border: 1px solid #ddd;
   border-radius: 5px;

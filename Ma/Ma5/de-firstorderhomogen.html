@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Första ordningens homogena DE</title>
+    <!-- style -->
+    <link rel="stylesheet" href="../../css/style.css">
+
+    <!-- något! -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <!-- MathJax -->
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <!-- Popper.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <!-- Bootstrap Js -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div>
+        <header class="header-box">
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Meny
+                </button>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="/index.html">Start</a>
+                    <a class="dropdown-item" href="../index.html">Tillbaka en nivå</a>
+                    <a class="dropdown-item" href="../../index.html">Tillbaka två nivåer</a>
+                </div>
+            </div>
+            <h1 class="header-title">Första ordningens homogena differentialekvation</h1>
+            <div class="header-area"><em>Testning</em></div>
+        </header>
+    </div>
+
+
+    <section>
+        <h1>Första ordningens homogena differentialekvation</h1>
+        <p>En enkel form av differentialekvaiton är <i>första ordnignens homogena DE</i>. Den är skriver på formen
+            \(y'-ky=0\) eller \(y'=ky\). Det betyder att derivatan för funktionen \(y\) är proportionell mot funktionens
+            värde. Det betyder att lutningen för funktionen \(y\) är en koefficient, (k\), multiplicerat med funktionens
+            värde vid den punkten. Kort så betyder det att den funktion som är lösningen till differenteialekvationen
+            \(y'=3y\) har lutningen (derivatan) 6 i punkten \( (1;2)\).</p>
+        <p>För tydlighetens skull antar vi att vi arbetar med en funktion med en variabel.</p>
+        <div class="definition-box">
+            <h4>Lösningsformel</h4>
+            <p>Om en DE kan skrivas på formen \(y'(x)=k\cdot y(x)\) så gäller att funktionen \(y(x)\) kan skrivas som
+                \(y(x)=C\cdot e^{kx} \) och då \(y(x)\) den allmänna lösningen.</p>
+        </div>
+        <div class="proof-box">
+            <h4>Bevis</h4>
+            <p>DE \(y'(x)=k\cdot y(x)\) kan skrivas som $$\frac{dy}{dx}=k\cdot y$$ vilket är ekvivalent med
+                $$\frac{1}{y} \frac{dy}{dx}=k.$$ Integrerar båda leden med avseende på \(x\) vilket ger $$\int
+                \frac{1}{y} \frac{dy}{dx} dx = \int k \ dx$$ som kan skrivas om som $$\int \frac{1}{y} dy = \int k \
+                dx.$$ Dessa två integraler har lösningen $$ \ln(y)+C_y=kx+C_x $$ som är ekvivalen med
+                $$\ln(y)=kx+C_x-C_y$$ där vi kan låta \(C_0=C_x-C_y\). $$\ln(y)=kx+C_0.$$ Nästa steg är att lösa ut
+                \(y\) vilket ger $$y=e^{kx+C_0}$$ som är samma som $$y=e^{C_0}\cdot e^{kx}.$$ Då \(C_0\) är en konstant
+                så kan vi skriva om \(e^{C_0}=C\) som ger den allmänna lösningen $$y=C\cdot e^{kx}.$$</p>
+            <p align="right">
+                \(\square \)
+            </p>
+        </div>
+        <p> Det blev ett långt bevis, finns det ett kortare? Det finns en variant som visar att en lösning är en lösning
+            och sen ett resonemang om varför det borde vara den enda lösningen men beviset ovan visar att det är den
+            enda lösningen.</p><a href="#pr_2" data-toggle="collapse">Tryck för att visa ett alternativ resonemang.</a>
+        <div id="u1_1" class="collapse">
+            <pre>Om det skulle vara något som måste förklaras, kanske för att det är nytt!?</pre>
+        </div>
+        <div id="pr_2" class="collapse">
+            <div class="proof-box">
+                <h4>Bevis - visa att det är en lösning!</h4>
+                <p>För DE \(y'(x)=k\cdot y(x)\) gäller att vi behöver ha en funktion vars derivata blir en koefficient
+                    multiplicerat med sin egna funktion. De finns en funktion som är sin egna derivata, \(e^x\) och en
+                    variant på den är \(e^{kx}\) vars derivata är \(k\cdot e^{kx}\). Sedan vet vi att om vi deriverar en
+                    funktion så är koefficienten kvar vilket då ger att om $$y=C\cdot e^{kx}$$ så är då $$y'=k\cdot
+                    C\cdot
+                    e^{kx}$$ vilket då ger att $$VL:y'=k\cdot C\cdot e^{kx}=k\cdot y: HL.$$</p>
+            </div>
+        </div>
+        <h4>Exempel</h4>
+        <p>Bestäm den allmänna lösningen till \( y'+2y=0 \).</p><span class="new-line"></span>
+        <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#ex_1"
+            aria-expanded="false" aria-controls="ex_1">
+            Lösning
+        </button>
+        <div id="ex_1" class="collapse">
+            <div class="solution-box">
+                <p>Skriver om DE till samma form som ovan, \(y'=ky\) för att sen kunna läsa av lösningen. Detta ger då
+                    $$y'=-2y$$ vilket ger att \(k=-2\) och då blir den allmänna lösningen $$y=C\cdot e^{-2x}.$$</p>
+                <p><u>Svar:</u> Den allmänna lösningen är \(y=C\cdot e^{-2x}\).</p>
+            </div>
+        </div>
+        <h4>Exempel</h4>
+        <p>Lös ekvationen \(4y'-3y=0\) där \(y(0)=e\) och visa genom kontroll att det är en lösning.</p><span
+            class="new-line"></span>
+        <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#ex_2"
+            aria-expanded="false" aria-controls="ex_2">
+            Lösning
+        </button>
+        <div id="ex_2" class="collapse">
+            <div class="solution-box">
+                <p>Här finns ett vilkor med \(y(0)=e\). Börjar med att ta fram den allmänna lösningen genom att först
+                    skriva om ekvationen till rätt form. $$4y'-3y=0$$ är ekvivalent med $$y'-\frac{3}{4}y=0$$ vilken kan
+                    skrivas som $$y'=\frac{3}{4}y$$ som har den allmänna lösningen $$y=C\cdot e^{\frac{3}{4}x}.$$
+                    Använder villkoret att \(y(0)=e\) vilket ger $$y(0)=C\cdot e^{-\frac{3}{4}\cdot 0}=C\cdot 1=e.$$ Det
+                    kan förenklas till $$y=e\cdot e^{\frac{3}{4}x}=e^{\frac{3}{4}x+1}.$$</p>
+                <p><u>Svar:</u> Lösningen är \(y=e^{\frac{3}{4}x+1}\).</p>
+                <p>Kontrollerar svaret genom att derivera \(y\) och sen sedan jämföra \(VL\) och \(HL\). Var noggrann
+                    med att använda ursprungsdifferentialekvationen för att kontrollera lösningen. $$y'=\frac{3}{4}\cdot
+                    e^{\frac{3}{4}x+1}$$ som ger$$VL:4\cdot \frac{3}{4}\cdot e^{\frac{3}{4}x+1}-3\cdot
+                    e^{\frac{3}{4}x+1}=3\cdot e^{\frac{3}{4}x+1}-3\cdot e^{\frac{3}{4}x+1}=0 : HL$$</p>
+            </div>
+        </div>
+
+    </section>
+    <section>
+        <h2>Uppgifter</h2>
+        <p>Lös följande differentialekvationer och kontrollera svaret.</p>
+        <ol>
+            <li>
+                <p>\(y'+8y=0\)</p>
+                <button class="btn btn-outline-info" type="button" data-toggle="collapse" data-target="#u1_t"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Tips
+                </button>
+                <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#u1_l"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Lösning
+                </button>
+                <div id="u1_t" class="collapse">
+                    <div class="tips-box">
+                        <p>Börja med att skriva om ekvationen till korrekt form, \(y'=ky\) och använd sen att lösninen
+                            blir $$y=C\cdot e^{kx}.$$ Bestäm vad \(k\) måste vara för att det ska stämma.</p>
+                    </div>
+                </div>
+                <div id="u1_l" class="collapse">
+                    <div class="solution-box">
+                        <p>\(y'+8y=0\) kan skrivas som \(y'=-8y\) där \(k=-8\) vilket ger den allmäna lösningen</p>
+                        <p>$$y=C\cdot e^{-8x}.$$</p>
+                        <p>Kontroll ger att $$y'=-8\cdot C\cdot e^{-8x}$$ och sätter vi in det i ursprungsekvationen så
+                            får vi $$VL: y'+8y=-8\cdot C\cdot e^{-8x}+8\cdot C\cdot e^{-8x}=0:HL$$</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <p>\(y'=3y\)</p>
+                <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#u2_l"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Lösning
+                </button>
+                <div id="u2_l" class="collapse">
+                    <div class="solution-box">
+                        <p>\(y'=3y\) där \(k=3\) vilket ger den allmäna lösningen $$y=C\cdot e^{3x}.$$</p>
+                        <p>Kontroll ger att $$y'=3\cdot C\cdot e^{3x}$$ och sätter vi in det i ursprungsekvationen så
+                            får vi $$VL: y'=3\cdot C\cdot e^{3x}=3y:HL$$</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <p>\(3y'+2y=0\) där \(y(0)=-2\).</p>
+                <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#u3_l"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Lösning
+                </button>
+                <div id="u3_l" class="collapse">
+                    <div class="solution-box">
+                        <p>\(3y'+2y=0\) kan skrivas som \(y'=-\dfrac{2}{3}y\) där \(k=-\frac{2}{3}\) vilket ger den
+                            allmäna lösningen $$y=C\cdot e^{-\frac{2}{3}x}.$$ Villkoret \(y(0)=-2\) ger att
+                            $$y(0)=C\cdot e^{-\frac{2}{3}\cdot 0}=C\cdot 1=-2.$$ Detta ger lösningen $$y=-2\cdot
+                            e^{-\frac{2}{3}x}.$$
+                        <p>
+                        <p>Kontroll ger att $$y'=-\frac{2}{3}\cdot ({-} 2)\cdot e^{-\frac{2}{3}x}=\frac{4}{3}\cdot
+                            e^{-\frac{2}{3}x}$$ och sätter vi in det i ursprungsekvationen så
+                            får vi $$VL: 3y'+2y=3\cdot \frac{4}{3}\cdot e^{-\frac{2}{3}x}+2\cdot (-2)\cdot
+                            e^{-\frac{2}{3}x}=4\cdot e^{-\frac{2}{3}x}-4\cdot e^{-\frac{2}{3}x}=0:HL$$</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <p>\(\dfrac{dy}{dx}-\dfrac{1}{2} y=0\)</p>
+                <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#u4_l"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Lösning
+                </button>
+                <div id="u4_l" class="collapse">
+                    <div class="solution-box">
+                        <p>\(\dfrac{dy}{dx}=y'\). från urspurngsekvationen har vi att \(k=\frac{1}{2}\) och den allmänna
+                            lösningen $$y=C\cdot e^{\frac{1}{2}x}.$$</p>
+                        <p>Kontroll ger att $$y'=\frac{1}{2}\cdot C\cdot e^{\frac{1}{2}x}$$ och sätter vi in det i
+                            ursprungsekvationen så
+                            får vi $$VL: \frac{dy}{dx}-\frac{1}{2} y=\frac{1}{2}\cdot C\cdot
+                            e^{\frac{1}{2}x}-\frac{1}{2}\cdot C\cdot e^{\frac{1}{2}x}=0:HL$$</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <p>\(\dfrac{1}{3}f'(t)-\dfrac{5}{6}f(t)=0\) där \(f'(0)=10\).</p>
+                <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#u5_l"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Lösning
+                </button>
+                <div id="u5_l" class="collapse">
+                    <div class="solution-box">
+                        <p>Förenklar DE till \(f'(t)=\dfrac{5}{2}f(t)\) där \(k=\frac{5}{2}\) vilket ger den allmäna
+                            lösningen $$y=C\cdot e^{\frac{5}{2}x}.$$ Det är dock derivatan som har villkoret att
+                            \(f'(0)=10\). Detta ger att $$f'(0)=\frac{5}{2}\cdot C\cdot e^{\frac{5}{2}\cdot
+                            0}=\frac{5}{2}\cdot C\cdot 1=10$$ och löser vi ut \(C\) så får vi $$C=\frac{2}{5}\cdot
+                            10=4.$$</p>
+                        <p>Lösningen är alltså \(f(t)=4\cdot e^{\frac{5}{2}x}\).</p>
+                        <p>Kontroll ger att $$VL: \frac{1}{3}f'(t)-\frac{5}{6}f(t)=\frac{1}{3}\cdot \frac{5}{2}\cdot
+                            4\cdot e^{\frac{5}{2}\cdot x}-\frac{5}{6}\cdot 4\cdot e^{\frac{5}{2}x}=\frac{10}{3} 4\cdot
+                            e^{\frac{5}{2}\cdot x}-\frac{10}{3} 4\cdot e^{\frac{5}{2}x}=0:HL$$</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <p>\(\dfrac{4}{3}\dfrac{dy}{dx}-y=\dfrac{1}{3}y\)</p>
+                <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#u6_l"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Lösning
+                </button>
+                <div id="u6_l" class="collapse">
+                    <div class="solution-box">
+                        <p>Låt \(y'\) vara i VL och samla \(y\) på HL. Använd sambandet för en allmän lösning och då får
+                            vi svaret \(y=C\cdot e^{\frac{4}{3}x}\).</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <p>\(3\cdot \left(y'-\dfrac{1}{2}y\right)=\dfrac{5}{2}y\) där \(y(2)=2\).</p>
+                <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#u7_l"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Lösning
+                </button>
+                <div id="u7_l" class="collapse">
+                    <div class="solution-box">
+                        <p>Missa inte att 3an är med i ekvationen!</p>
+                        <p>Den allmänna lösningen blir \(y=C\cdot e^{\frac{4}{3}x}\).</p>
+                        <p>För att lösa ekvationen med villkoret så sätter vi $$y(2)=C\cdot e^{\frac{4}{3}\cdot 2}=2$$
+                            där $$C=\frac{2}{e^{\frac{8}{3}}}=2\cdot e^{-\frac{8}{3}} $$ som ger lösningen $$y=2\cdot
+                            e^{-\frac{8}{3}} \cdot e^{\frac{4}{3}x}=2\cdot e^{\frac{4}{3}x-\frac{8}{3}}=2\cdot
+                            e^{\frac{1}{3}(4x-2)}$$</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <p>\(3,5\,\%\cdot K(t)-0,2\, \%\cdot K(t)=0\) som skär punkten \( (0,1000)\).</p>
+                <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#u8_l"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Lösning
+                </button>
+                <div id="u8_l" class="collapse">
+                    <div class="solution-box">
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <p>\(F'(t)+10^{-3} \cdot F(t)=0\)</p>
+                <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#u9_l"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Lösning
+                </button>
+                <div id="u9_l" class="collapse">
+                    <div class="solution-box">
+
+                    </div>
+                </div>
+            </li>
+            <li>
+                <p>\(F(t)+f(t)=0\)</p>
+                <button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#u10_l"
+                    aria-expanded="false" aria-controls="collapseExample">
+                    Lösning
+                </button>
+                <div id="u10_l" class="collapse">
+                    <div class="solution-box">
+                        <p>\(F(t)\) är (antar vi, annars går den inte att lösa!) den primitiva funktionen till \(f(t)\)
+                            vilket betyder att \(f(t)\) är derivatan. Skriver om ekvationen till \(f(t)=-F(t)\) som är
+                            ekvivalent med \(F'(t)=-F(t)\). Den ekvationen har lösningen \(F(t)=C\cdot e^{-t}\).</p>
+                        <p>Kontroll av lösningen ger $$f(t)=F'(t)=-C\cdot e^{-t}$$ då blir ekvationen $$VL:(t)=C\cdot
+                            e^{-t}+\left( -C\cdot e^{-t} \right)=0: HL$$</p>
+                    </div>
+                </div>
+            </li>
+        </ol>
+        <p></p>
+    </section>
+</body>
+
+</html>

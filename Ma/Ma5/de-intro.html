@@ -4,7 +4,7 @@
 <head>
 	<title>Introduktion till Differentialekvationer</title>
 	<!-- style -->
-	<link rel="stylesheet" href="../css/style.css">
+	<link rel="stylesheet" href="../../css/style.css">
 
 	<!-- något! -->
 	<meta charset="utf-8">
@@ -65,20 +65,20 @@
 			intervall för att sedan fyllas på med oänligt många lösningar.</p>
 		<p>En differentialekvation (vi kan kalla det <i>DE</i>) är en ekvation som har en funktion som lösning!</p>
 		<h4>Exempel: Differentialekvationer</h4>
-		<p>Nedan är olika exempel på hur DE kan se ut.</p>
+		<p>Nedan är olika exempel på hur olika differentialekvationer kan se ut.</p>
 		<div class="solution-box">
-			<p>\( y'+2y=0 \)</p>
-			<p>\( y''=x^2+1 \)</p>
-			<p>\( y'+x^2\cdot y=3x \)</p>
-			<p>\( y''-3y=\sin(2x) \)</p>
-			<p>\( \sqrt{y'+2y^2} \cdot e^{x^2}=0 \)</p>
+			<p>\( y'+2y=0 \) : Första ordningen linjär homogen differentialekvation </p>
+			<p>\( y''=x^2+1 \) : Andra ordningens icke-homogen differentialekvation</p>
+			<p>\( y'+x^2\cdot y=3x \) : Första ordningens linjära icke-homogen differentialekvation</p>
+			<p>\( y''-3y=\sin(2x) \) : Andra ordningens linjära icke-homogen differentialekvation</p>
+			<p>\( \sqrt{y'}+2y^2 \cdot e^{x^2}=0 \) : Första ordningens ickelinjära differentialekvation</p>
 		</div>
 		<p>Olika typer av DE har olika lösningstekniker. Många av våra grundstrategier för att lösa vanliga ekvationer
 			gäller även för DE. </p>
 		<ul>
 			<li>Vid ekvationsslöning så måste vi först identifiera vilken typ av ekvation det är och sedan välja lämplig
 				metod för att lösa den.</li>
-			<li>När vi har en lösning så kan vi kontrollera om den stämmer gneom att pröva den i ursprungsekvationen.
+			<li>När vi har en lösning så kan vi kontrollera om den stämmer genom att pröva den i ursprungsekvationen.
 			</li>
 		</ul>
 
@@ -109,11 +109,14 @@
 				<p>\(HL: 2x \)</p>
 				<p>Då \(VL=HL\) stämmer det att \(y=10e^{\frac{5}{2}x}-\frac{2}{5}x-\frac{4}{25}\) är en lösning till
 					differentialekvationen \(2y'-5y=2x\).</p>
+				<p align="right">
+					\(\square \)
+				</p>
 			</div>
 		</div>
 
 		<h4>Exempel</h4>
-		<p>Visa att \(y=10e^{\frac{5}{2}x}-\frac{2}{5}x-\frac{4}{25}\) är en lösning till differentialekvationen
+		<p>Verifiera att $$y=10e^{\frac{5}{2}x}-\frac{2}{5}x-\frac{4}{25}$$ är en lösning till differentialekvationen
 			\(2y'-5y=2x\).</p><span class="new-line"></span>
 		<button class="btn btn-outline-secondary" type="button" data-toggle="collapse" data-target="#ex_2"
 			aria-expanded="false" aria-controls="ex_2">
@@ -121,7 +124,7 @@
 		</button>
 		<div id="ex_2" class="collapse">
 			<div class="solution-box">
-				<p>Vi visar det genom att jämföra \(VL\) och \(HL\).</p>
+				<p>Vi verifierar det genom att jämföra \(VL\) och \(HL\).</p>
 				<p>Eftersom vi har \(y'\) så behövs derivatan.</p>
 				<p>\(y=10e^{\frac{5}{2}x}-\frac{2}{5}x-\frac{4}{25}\)</p>
 				<p>\(y'=\frac{5}{2}\cdot 10e^{\frac{5}{2}x}-\frac{2}{5}x=25e^{\frac{5}{2}x}-\frac{2}{5}\)</p>
@@ -138,9 +141,31 @@
 				<p>\(HL: 2x \)</p>
 				<p>Då \(VL=HL\) stämmer det att \(y=10e^{\frac{5}{2}x}-\frac{2}{5}x-\frac{4}{25}\) är en lösning till
 					differentialekvationen \(2y'-5y=2x\).</p>
+				<p align="right">
+					\(\square \)
+				</p>
 			</div>
 		</div>
-
+		<h2>Tillämpningar</h2>
+		<p>Differentialekvationer kan användas inom olika områden. Några exempel är:</p>
+		<h4>Biologi</h4>
+		<ul>
+			<li>Populationstillväxt: \(\frac{dP}{dt}=rP\left(1-\frac{P}{K}\right)\)</li>
+			<li>Sjukdomsspridning: \(dS+dI+dR=0\)</li>
+		</ul>
+		<h4>Ekonomi</h4>
+		<ul>
+			<li>Kapitaltillväxt: \(\frac{dK}{dt}=rK\)</li>
+		</ul>
+		<h4>Fysik</h4>
+		<ul>
+			<li>Elektriska kretsar: \(L\frac{d^2I}{dt^2}+R\frac{dI}{dt}+\frac{1}{C}I=V(t)\)</li>
+			<li>Harmonisk oscillator: \( m \frac{d^2x}{dt}+kx=0\)</li>
+		</ul>
+		<h4>Kemi</h4>
+		<ul>
+			<li>Reaktionskinetik: \(\frac{d[A]}{dt}=-k[A]\)</li>
+		</ul>
 	</section>
 	<section>
 		<h2>Uppgifter</h2>
