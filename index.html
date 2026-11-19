@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcards</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>📚 Flashcards</h1>
+
+    <div class="controls">
+        <select id="categorySelect">
+            <option value="all">Alla kategorier</option>
+        </select>
+
+        <button onclick="shuffleCards()">🔀 Blanda</button>
+
+        <label class="upload">
+            Importera CSV
+            <input type="file" id="csvInput" accept=".csv">
+        </label>
+    </div>
+</header>
+
+<main>
+
+<div class="stats">
+    <span>✅ Rätt: <strong id="correct">0</strong></span>
+    <span>❌ Fel: <strong id="wrong">0</strong></span>
+    <span>📊 Totalt: <strong id="total">0</strong></span>
+</div>
+
+<div class="card-container">
+
+    <div class="card" onclick="flipCard()">
+
+        <div id="front" class="side">
+            Klicka för att visa svar
+        </div>
+
+        <div id="back" class="side hidden">
+            Svar visas här
+        </div>
+
+    </div>
+
+</div>
+
+<div class="buttons">
+    <button onclick="markAnswer(true)">✅ Rätt</button>
+    <button onclick="markAnswer(false)">❌ Fel</button>
+</div>
+
+<div class="navigation">
+    <button onclick="previousCard()">⬅ Föregående</button>
+    <button onclick="nextCard()">Nästa ➡</button>
+</div>
+
+</main>
+
+<script src="app.js"></script>
+
+</body>
+</html>

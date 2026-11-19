@@ -1,0 +1,101 @@
+body{
+    font-family:Segoe UI,sans-serif;
+    background:#f4f6fb;
+    margin:0;
+    text-align:center;
+}
+
+header{
+    background:#284b63;
+    color:white;
+    padding:20px;
+}
+
+.controls{
+    display:flex;
+    gap:10px;
+    justify-content:center;
+    flex-wrap:wrap;
+}
+
+select,
+button{
+    padding:10px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.upload{
+    background:white;
+    color:black;
+    padding:10px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.upload input{
+    display:none;
+}
+
+.stats{
+    margin:20px;
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    font-size:18px;
+}
+
+.card-container{
+    display:flex;
+    justify-content:center;
+    margin-top:20px;
+}
+
+.card{
+    width:500px;
+    max-width:90%;
+    min-height:250px;
+    background:white;
+    border-radius:15px;
+    box-shadow:0 4px 12px rgba(0,0,0,.2);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    padding:20px;
+}
+
+.side{
+    font-size:28px;
+}
+
+.hidden{
+    display:none;
+}
+
+.buttons,
+.navigation{
+    margin-top:20px;
+}
+
+.buttons button{
+    margin:10px;
+    font-size:18px;
+}
+
+.navigation button{
+    margin:5px;
+}
+
+@media(max-width:700px){
+
+    .card{
+        min-height:200px;
+    }
+
+    .side{
+        font-size:22px;
+    }
+
+}
