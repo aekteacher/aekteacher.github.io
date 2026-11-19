@@ -3,13 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
 
     <title>Flashcards V4.2</title>
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+          href="styles.css">
 
     <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
 
     <script>
@@ -21,6 +24,7 @@
     </script>
 
     <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+
 </head>
 
 <body>
@@ -31,52 +35,75 @@
 
     <div id="activeFilter"></div>
 
-    <select id="subjectSelect"></select>
+    <div class="toolbar">
 
-    <input
-        id="searchBox"
-        type="text"
-        placeholder="Sök kort...">
-
-    <button id="darkBtn">
-        🌙 Mörkt läge
-    </button>
-
-    <button id="favoritesBtn">
-        ⭐ Favoriter
-    </button>
-
-    <button id="failedBtn">
-        ❌ Felaktiga
-    </button>
-
-    <button id="exportBtn">
-        📥 Exportera
-    </button>
-
-    <label class="btn">
-
-        📤 Importera
+        <select id="subjectSelect"></select>
 
         <input
-            id="importProgress"
-            type="file"
-            accept=".json"
-            hidden>
+            type="text"
+            id="searchBox"
+            placeholder="Sök kort...">
 
-    </label>
+        <button id="darkBtn">
+            🌙 Mörkt läge
+        </button>
+
+        <button id="favoritesBtn">
+            ⭐ Favoriter
+        </button>
+
+        <button id="failedBtn">
+            ❌ Felaktiga
+        </button>
+
+        <button id="exportBtn">
+            📥 Exportera
+        </button>
+
+        <label class="uploadButton">
+
+            📤 Importera
+
+            <input
+                type="file"
+                id="importProgress"
+                accept=".json"
+                hidden>
+
+        </label>
+
+    </div>
 
 </header>
 
 <div class="progress">
+
     <div id="progressBar"></div>
+
 </div>
 
-<div id="emptyMessage" class="hidden">
+<div id="emptyMessage"
+     class="hidden">
+
     Inga kort matchar aktuellt filter.
+
+</div>
+
+<div class="stats">
+
+    ✅ Rätt:
+    <span id="correct">0</span>
+
+    &nbsp;&nbsp;
+
+    ❌ Fel:
+    <span id="wrong">0</span>
+
 </div>
 
 <div class="card">
+
+    <!-- FRAMSIDA -->
 
     <div id="front">
 
@@ -89,7 +116,10 @@
 
     </div>
 
-    <div id="back" class="hidden">
+    <!-- BAKSIDA -->
+
+    <div id="back"
+         class="hidden">
 
         <img
             id="answerImage"
@@ -102,7 +132,7 @@
 
 </div>
 
-<div class="card-buttons">
+<div class="buttonBar">
 
     <button id="flipBtn">
         Visa svar
@@ -122,7 +152,8 @@
 
 </div>
 
-<script type="module" src="js/app.js"></script>
+<script type="module"
+        src="js/app.js"></script>
 
 </body>
 
