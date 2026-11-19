@@ -1,2 +1,0 @@
-export function tagFilter(cards,tags){if(!tags.length)return cards;return cards.filter(c=>{const ct=(c.tags||'').split(';').map(x=>x.trim());return tags.every(t=>ct.includes(t));});}
-export function searchCards(cards,text){if(!text)return cards;return cards.filter(c=>JSON.stringify(c).toLowerCase().includes(text.toLowerCase()));}

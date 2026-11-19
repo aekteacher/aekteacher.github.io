@@ -1,1 +1,0 @@
-export function exportData(data){const b=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(b);a.download='flashcards-framsteg.json';a.click();}
