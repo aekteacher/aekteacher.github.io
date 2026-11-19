@@ -1,38 +1,129 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Flashcards V4.1</title>
-<link rel="stylesheet" href="styles.css">
-<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-<script>MathJax={tex:{inlineMath:[["$","$"]]}};</script>
-<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Flashcards V4.2</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$']]
+            }
+        };
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
 </head>
+
 <body>
+
 <header>
-<h1>📚 Flashcards V4.1</h1>
-<div id="activeFilter"></div>
-<select id="subjectSelect"></select>
-<input id="searchBox" placeholder="Sök">
-<button id="darkBtn">🌙 Mörkt läge</button>
-<button id="favoritesBtn">⭐ Favoriter</button>
-<button id="failedBtn">❌ Felaktiga</button>
-<button id="exportBtn">📥 Exportera</button>
-<input id="importProgress" type="file" accept=".json">
+
+    <h1>📚 Flashcards</h1>
+
+    <div id="activeFilter"></div>
+
+    <select id="subjectSelect"></select>
+
+    <input
+        id="searchBox"
+        type="text"
+        placeholder="Sök kort...">
+
+    <button id="darkBtn">
+        🌙 Mörkt läge
+    </button>
+
+    <button id="favoritesBtn">
+        ⭐ Favoriter
+    </button>
+
+    <button id="failedBtn">
+        ❌ Felaktiga
+    </button>
+
+    <button id="exportBtn">
+        📥 Exportera
+    </button>
+
+    <label class="btn">
+
+        📤 Importera
+
+        <input
+            id="importProgress"
+            type="file"
+            accept=".json"
+            hidden>
+
+    </label>
+
 </header>
-<div class="progress"><div id="progressBar"></div></div>
-<div id="emptyMessage" class="hidden">Inga kort matchar aktuellt filter.</div>
+
+<div class="progress">
+    <div id="progressBar"></div>
+</div>
+
+<div id="emptyMessage" class="hidden">
+    Inga kort matchar aktuellt filter.
+</div>
+
 <div class="card">
-<div id="front"><img id="cardImage" class="hidden"><div id="questionText"></div></div>
-<div id="back" class="hidden"></div>
+
+    <div id="front">
+
+        <img
+            id="questionImage"
+            class="hidden"
+            alt="Frågebild">
+
+        <div id="questionText"></div>
+
+    </div>
+
+    <div id="back" class="hidden">
+
+        <img
+            id="answerImage"
+            class="hidden"
+            alt="Svarsbild">
+
+        <div id="answerText"></div>
+
+    </div>
+
 </div>
-<div>
-<button id="flipBtn">Visa svar</button>
-<button id="favCurrentBtn">⭐ Svårt kort</button>
-<button id="correctBtn">✅ Rätt</button>
-<button id="wrongBtn">❌ Fel</button>
+
+<div class="card-buttons">
+
+    <button id="flipBtn">
+        Visa svar
+    </button>
+
+    <button id="favCurrentBtn">
+        ⭐ Svårt kort
+    </button>
+
+    <button id="correctBtn">
+        ✅ Rätt
+    </button>
+
+    <button id="wrongBtn">
+        ❌ Fel
+    </button>
+
 </div>
+
 <script type="module" src="js/app.js"></script>
-</body></html>
+
+</body>
+
+</html>

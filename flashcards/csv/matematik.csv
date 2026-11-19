@@ -1,4 +1,4 @@
-id,question,answer,image,tags
-m001,"Vad är 12 x 12?",144,arctan.png,1;matematik
-m002,"Roten ur 81?",9,,1;algebra
-m003,"Derivatan av $x^2$?",$2x$,,2;algebra
+id,question,answer,questionImage,answerImage,tags
+m001,"Vad är 12 x 12?",144,arctan.png,,1;matematik
+m002,"Roten ur 81?",9,,,1;algebra
+m003,"Derivatan av $x^2$?",$2x$,,,2;algebra

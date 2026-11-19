@@ -1,1 +1,78 @@
-export function render(card){questionText.innerHTML=marked.parse(card.question||'');back.innerHTML=marked.parse(card.answer||'');if(card.image){cardImage.src='images/'+card.image;cardImage.classList.remove('hidden');}else cardImage.classList.add('hidden');if(window.MathJax)MathJax.typesetPromise();}
+export function render(card) {
+
+    const questionText =
+        document.getElementById(
+            "questionText"
+        );
+
+    const answerText =
+        document.getElementById(
+            "answerText"
+        );
+
+    const questionImage =
+        document.getElementById(
+            "questionImage"
+        );
+
+    const answerImage =
+        document.getElementById(
+            "answerImage"
+        );
+
+    questionText.innerHTML =
+        marked.parse(
+            card.question || ""
+        );
+
+    answerText.innerHTML =
+        marked.parse(
+            card.answer || ""
+        );
+
+    if (card.questionImage) {
+
+        questionImage.src =
+            "images/" +
+            card.questionImage;
+
+        questionImage.classList.remove(
+            "hidden"
+        );
+
+    } else {
+
+        questionImage.classList.add(
+            "hidden"
+        );
+
+        questionImage.removeAttribute(
+            "src"
+        );
+    }
+
+    if (card.answerImage) {
+
+        answerImage.src =
+            "images/" +
+            card.answerImage;
+
+        answerImage.classList.remove(
+            "hidden"
+        );
+
+    } else {
+
+        answerImage.classList.add(
+            "hidden"
+        );
+
+        answerImage.removeAttribute(
+            "src"
+        );
+    }
+
+    if (window.MathJax) {
+        MathJax.typesetPromise();
+    }
+}
