@@ -1,0 +1,1 @@
+const fs=require('fs');const files=fs.readdirSync('csv').filter(f=>f.endsWith('.csv'));fs.writeFileSync('csv/index.json',JSON.stringify(files.map(f=>({id:f.replace('.csv',''),namn:f.replace('.csv','')})),null,2));
