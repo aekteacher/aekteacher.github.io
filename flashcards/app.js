@@ -59,8 +59,43 @@ select.appendChild(option);
 
 function updateCard(){
 
-if(filteredCards.length===0){
-return;
+    if(filteredCards.length===0){
+        return;
+    }
+
+    const card = filteredCards[current];
+
+    document.getElementById("questionText")
+        .textContent = card.question;
+
+    document.getElementById("back")
+        .textContent = card.answer;
+
+    const img =
+        document.getElementById("cardImage");
+
+    if(card.image){
+
+        img.src = "images/" + card.image;
+        img.classList.remove("hidden");
+
+    } else {
+
+        img.classList.add("hidden");
+        img.removeAttribute("src");
+
+    }
+
+    showingAnswer = false;
+
+    document.getElementById("front")
+        .classList.remove("hidden");
+
+    document.getElementById("back")
+        .classList.add("hidden");
+
+    document.getElementById("total")
+        .textContent = filteredCards.length;
 }
 
 const card = filteredCards[current];
