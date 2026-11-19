@@ -1,0 +1,2 @@
+export async function loadSubjects(){return await (await fetch("csv/index.json")).json();}
+export async function loadCards(id){const t=await (await fetch(`csv/${id}.csv`)).text();return Papa.parse(t,{header:true,skipEmptyLines:true}).data;}

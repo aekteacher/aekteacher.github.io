@@ -1,0 +1,1 @@
+export function render(card){questionText.innerHTML=marked.parse(card.question||'');back.innerHTML=marked.parse(card.answer||'');if(card.image){cardImage.src='images/'+card.image;cardImage.classList.remove('hidden');}else cardImage.classList.add('hidden');if(window.MathJax)MathJax.typesetPromise();}
