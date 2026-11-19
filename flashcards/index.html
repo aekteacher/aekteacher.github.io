@@ -1,1 +1,20 @@
-<!DOCTYPE html><html lang="sv"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Flashcards V2</title><link rel="stylesheet" href="styles.css"><script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script><script>MathJax={tex:{inlineMath:[["$","$"]]}};</script><script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script></head><body><header><h1>📚 Flashcards</h1><select id="subjectSelect"></select><input id="searchBox" placeholder="Sök kort"><button id="darkBtn">🌙</button><button onclick="toggleFavoritesMode()">⭐ Favoriter</button><button onclick="toggleFailedMode()">❌ Felaktiga</button><button onclick="exportProgress()">📥 Exportera</button><label class="btn">📤 Importera<input type="file" id="importProgress" accept=".json" hidden></label></header><div class="progress"><div id="progressBar"></div></div><div class="stats">✅ <span id="correct">0</span> ❌ <span id="wrong">0</span></div><div class="card" onclick="flipCard()"><div id="front"><img id="cardImage" class="hidden"><div id="questionText"></div></div><div id="back" class="hidden"></div></div><div><button onclick="toggleFavoriteCurrent()">⭐ Svårt kort</button><button onclick="markAnswer(true)">✅ Rätt</button><button onclick="markAnswer(false)">❌ Fel</button></div><script src="app.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Flashcards V2</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>MathJax={tex:{inlineMath:[["$","$"]]}};</script>
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+  </head>
+  <body>
+    <header><h1>📚 Flashcards</h1>
+      <select id="subjectSelect"></select>
+      <input id="searchBox" placeholder="Sök kort">
+      <button id="darkBtn">🌙</button>
+      <button onclick="toggleFavoritesMode()">⭐ Favoriter</button>
+      <button onclick="toggleFailedMode()">❌ Felaktiga</button>
+      <button onclick="exportProgress()">📥 Exportera</button>
+      <label class="btn">📤 Importera<input type="file" id="importProgress" accept=".json" hidden></label></header><div class="progress"><div id="progressBar"></div></div><div class="stats">✅ <span id="correct">0</span> ❌ <span id="wrong">0</span></div><div class="card" onclick="flipCard()"><div id="front"><img id="cardImage" class="hidden"><div id="questionText"></div></div><div id="back" class="hidden"></div></div><div><button onclick="toggleFavoriteCurrent()">⭐ Svårt kort</button><button onclick="markAnswer(true)">✅ Rätt</button><button onclick="markAnswer(false)">❌ Fel</button></div><script src="app.js"></script></body></html>
