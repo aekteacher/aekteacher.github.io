@@ -23,14 +23,47 @@ let allCards = [];
 let cards = [];
 let current = 0;
 
+const activeFilter =
+    document.getElementById("activeFilter");
+
+const searchBox =
+    document.getElementById("searchBox");
+
+const subjectSelect =
+    document.getElementById("subjectSelect");
+
+const emptyMessage =
+    document.getElementById("emptyMessage");
+
+const progressBar =
+    document.getElementById("progressBar");
+
+const front =
+    document.getElementById("front");
+
+const back =
+    document.getElementById("back");
+
+const correctElement =
+    document.getElementById("correct");
+
+const wrongElement =
+    document.getElementById("wrong");
+
+const darkBtn =
+    document.getElementById("darkBtn");
+
+const exportBtn =
+    document.getElementById("exportBtn");
+
+const importProgress =
+    document.getElementById("importProgress");
+
 let stats =
-    load(
-        "flashStats",
-        {
-            correct: 0,
-            wrong: 0
-        }
-    );
+    load("flashStats", {
+        correct: 0,
+        wrong: 0
+    });
 
 let favorites =
     load("favorites", []);
@@ -66,11 +99,9 @@ async function init() {
         option.textContent =
             subject.namn;
 
-        document
-            .getElementById(
-                "subjectSelect"
-            )
-            .appendChild(option);
+        subjectSelect.appendChild(
+            option
+        );
 
     });
 
@@ -85,32 +116,26 @@ async function init() {
 
 async function loadSubject(id) {
 
-try {
+    try {
 
-    allCards =
-        await loadCards(id);
+        allCards =
+            await loadCards(id);
 
-    applyFilters();
+        applyFilters();
 
-}
-catch(error) {
+    }
+    catch (error) {
 
-    console.error(error);
+        console.error(error);
 
-    document.getElementById(
-        "emptyMessage"
-    ).textContent =
-        error.message;
+        emptyMessage.textContent =
+            error.message;
 
-    document.getElementById(
-        "emptyMessage"
-    ).classList.remove(
-        "hidden"
-    );
+        emptyMessage.classList.remove(
+            "hidden"
+        );
 
-}
-
-    applyFilters();
+    }
 }
 
 function applyFilters() {
@@ -122,24 +147,25 @@ function applyFilters() {
 
     if (tag) {
 
-        cards =
-            cards.filter(card => {
+        cards = cards.filter(card => {
 
-                const tags =
-                    (card.tags || "")
-                    .split(";")
-                    .map(t => t.trim());
+            const tags =
+                (card.tags || "")
+                .split(";")
+                .map(t => t.trim());
 
-                return tags.includes(tag);
+            return tags.includes(tag);
 
-            });
+        });
 
         activeFilter.textContent =
             "Aktivt filter: " + tag;
 
-    } else {
+    }
+    else {
 
-        activeFilter.textContent = "";
+        activeFilter.textContent =
+            "";
 
     }
 
@@ -155,16 +181,6 @@ function applyFilters() {
 }
 
 function show() {
-
-    const front =
-        document.getElementById(
-            "front"
-        );
-
-    const back =
-        document.getElementById(
-            "back"
-        );
 
     front.classList.remove(
         "hidden"
@@ -196,10 +212,10 @@ function show() {
             * 100
         ) + "%";
 
-    correct.textContent =
+    correctElement.textContent =
         stats.correct;
 
-    wrong.textContent =
+    wrongElement.textContent =
         stats.wrong;
 }
 
@@ -389,9 +405,11 @@ importProgress.onchange =
                 );
 
                 location.reload();
+
             };
 
         reader.readAsText(file);
+
     };
 
 init();
