@@ -59,6 +59,11 @@ const exportBtn =
 const importProgress =
     document.getElementById("importProgress");
 
+const randomMode =
+    document.getElementById(
+        "randomMode"
+    );
+
 let stats =
     load("flashStats", {
         correct: 0,
@@ -180,6 +185,43 @@ function applyFilters() {
     show();
 }
 
+function nextCard() {
+
+    if (!cards.length) {
+        return;
+    }
+
+    if (randomMode && randomMode.checked) {
+
+        let nextIndex;
+
+        do {
+
+            nextIndex =
+                Math.floor(
+                    Math.random() *
+                    cards.length
+                );
+
+        }
+        while (
+            cards.length > 1 &&
+            nextIndex === current
+        );
+
+        current = nextIndex;
+
+    } else {
+
+        current =
+            (current + 1)
+            % cards.length;
+
+    }
+
+    show();
+}
+
 function show() {
 
     front.classList.remove(
@@ -244,11 +286,8 @@ document
         stats
     );
 
-    current =
-        (current + 1)
-        % cards.length;
+    nextCard();
 
-    show();
 };
 
 document
@@ -278,11 +317,8 @@ document
         stats
     );
 
-    current =
-        (current + 1)
-        % cards.length;
+    nextCard();
 
-    show();
 };
 
 document
