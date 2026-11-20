@@ -89,6 +89,15 @@ let failed =
         []
     );
 
+/**
+ * Hämtar taggar från URL.
+ *
+ * Exempel:
+ * ?tag=1,funktioner
+ *
+ * returnerar:
+ * ["1","funktioner"]
+ */
 function getTagFilter() {
 
     const params =
@@ -96,7 +105,19 @@ function getTagFilter() {
             location.search
         );
 
-    return params.get("tag");
+    const tagString =
+        params.get("tag");
+
+    if (!tagString) {
+
+        return [];
+
+    }
+
+    return tagString
+        .split(",")
+        .map(tag => tag.trim());
+
 }
 
 async function init() {
@@ -130,6 +151,7 @@ async function init() {
         );
 
     }
+
 }
 
 async function loadSubject(id) {
@@ -154,6 +176,7 @@ async function loadSubject(id) {
         );
 
     }
+
 }
 
 function createStudyQueue() {
@@ -175,8 +198,8 @@ function createStudyQueue() {
 
             const j =
                 Math.floor(
-                    Math.random() *
-                    (i + 1)
+                    Math.random()
+                    * (i + 1)
                 );
 
             [
@@ -187,6 +210,7 @@ function createStudyQueue() {
                 studyQueue[j],
                 studyQueue[i]
             ];
+
         }
 
     }
@@ -194,6 +218,7 @@ function createStudyQueue() {
 
         studyQueue =
             [...cards];
+
     }
 
     current = 0;
@@ -205,32 +230,40 @@ function createStudyQueue() {
             "0%";
 
     }
+
 }
 
 function applyFilters() {
 
     cards = [...allCards];
 
-    const tag =
+    const selectedTags =
         getTagFilter();
 
-    if (tag) {
+    if (selectedTags.length > 0) {
 
         cards =
             cards.filter(card => {
 
-                const tags =
+                const cardTags =
                     (card.tags || "")
                     .split(",")
-                    .map(t => t.trim());
+                    .map(tag =>
+                        tag.trim()
+                    );
 
-                return tags.includes(tag);
+                return selectedTags.every(
+                    selectedTag =>
+                        cardTags.includes(
+                            selectedTag
+                        )
+                );
 
             });
 
         activeFilter.textContent =
-            "Aktivt filter: " +
-            tag;
+            "Aktiva filter: " +
+            selectedTags.join(", ");
 
     }
     else {
@@ -249,6 +282,7 @@ function applyFilters() {
     createStudyQueue();
 
     show();
+
 }
 
 function nextCard() {
@@ -256,7 +290,9 @@ function nextCard() {
     if (
         studyQueue.length === 0
     ) {
+
         return;
+
     }
 
     studiedCount++;
@@ -273,6 +309,7 @@ function nextCard() {
     }
 
     show();
+
 }
 
 function show() {
@@ -302,6 +339,7 @@ function show() {
         }
 
         return;
+
     }
 
     emptyMessage.classList.add(
@@ -330,6 +368,7 @@ function show() {
                 studiedCount,
                 studyQueue.length
             )} / ${studyQueue.length}`;
+
     }
 
     correctElement.textContent =
@@ -337,6 +376,7 @@ function show() {
 
     wrongElement.textContent =
         stats.wrong;
+
 }
 
 document
@@ -495,7 +535,9 @@ importProgress.onchange =
             event.target.files[0];
 
         if (!file) {
+
             return;
+
         }
 
         const reader =
@@ -525,6 +567,7 @@ importProgress.onchange =
                 );
 
                 location.reload();
+
             };
 
         reader.readAsText(
