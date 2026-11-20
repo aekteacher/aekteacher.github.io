@@ -9,4 +9,4 @@ m007,"Vad är det exakta värdet av cos 30°?",$√(3)/2$,,,1;trigonometri
 m008,"Vad är det exakta värdet av cos 45°?",$√(2)/2$,,,1;trigonometri
 m009,"Vad är det exakta värdet av cos 60°?",1/2,,,1;trigonometri
 m010,"Vad är det exakta värdet av cos 90°?",0,,,1;trigonometri
-m011,"Vad är komposantform?",En vektor skriven som en summa av basvektorer, t.ex. $u=3e_x+4e_y$.,,,1;trigonometri
+m011,"Vad är komposantform?","En vektor skriven som en summa av basvektorer t.ex. $u=3e_x+4e_y$.",,,1;trigonometri
