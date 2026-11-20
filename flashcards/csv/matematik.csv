@@ -26,7 +26,7 @@ m012,"Vad är koordinatform?","En vektor skriven med sina koordinater, t.ex. $(3
 
 m013,"Vid algebraisk addition av vektorer måste vi...","... addera motsvarande komponenter var för sig.",,,1;trigonometri
 
-m014,"Vid grafisk addition av vektorer gör vi genom att...","... placera nästa vektors startpunkt i den föregående vektorns slutpunkt. Resultanten går från den första vektorns startpunkt till den sista vektorns slutpunkt.",,graf-vektoraddition.png,1;trigonometri
+m014,"Grafisk addition av vektorer gör vi genom att...","... placera nästa vektors startpunkt i den föregående vektorns slutpunkt. Resultanten går från den första vektorns startpunkt till den sista vektorns slutpunkt.",,graf-vektoraddition.png,1;trigonometri
 
 m015,"Vad är en resultant?","Summan av två eller flera vektorer.",,,1;trigonometri
 
