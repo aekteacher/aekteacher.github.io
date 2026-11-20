@@ -38,9 +38,9 @@ m018,"Vad är en vektors riktning?","Vinkeln som vektorn bildar med den positiva
 
 m019,"Hur beräknas en vektors riktning?","Riktningsvinkeln kan beräknas med $\arctan\left(\frac{y}{x}\right)$ där $x$ och $y$ är vektorns koordinater.",,,1;trigonometri
 
-m020,"Vad är komponentuppdelning?","Att dela upp en vektor i dess x- och y-komponenter.",,,1;trigonometri
+m020,"Vad är komposantuppdelning?","Att dela upp en vektor i dess x- och y-komponenter.",,,1;trigonometri
 
-m021,"Varför använder vi komponentuppdelning?","För att göra beräkningar med vektorer enklare.",,,1;trigonometri
+m021,"Varför använder vi komposantuppdelning?","För att göra beräkningar med vektorer enklare.",,,1;trigonometri
 
 m022,"Vad är en enhetsvektor?","En vektor med längden 1.",,,1;trigonometri
 
