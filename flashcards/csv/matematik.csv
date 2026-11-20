@@ -1,23 +1,53 @@
 id,question,answer,questionImage,answerImage,tags
 
-m001,"Vad är det exakta värdet av sin 0°?",0,,,1;trigonometri
+m001,"Vad är det exakta värdet av sin 0°?","0",,,1;trigonometri
 
-m002,"Vad är det exakta värdet av sin 30°?",1/2,,,1;trigonometri
+m002,"Vad är det exakta värdet av sin 30°?","$\frac{1}{2}$",,,1;trigonometri
 
 m003,"Vad är det exakta värdet av sin 45°?","$\frac{\sqrt{2}}{2}$",,,1;trigonometri
 
 m004,"Vad är det exakta värdet av sin 60°?","$\frac{\sqrt{3}}{2}$",,,1;trigonometri
 
-m005,"Vad är det exakta värdet av sin 90°?",1,,,1;trigonometri
+m005,"Vad är det exakta värdet av sin 90°?","1",,,1;trigonometri
 
-m006,"Vad är det exakta värdet av cos 0°?",1,,,1;trigonometri
+m006,"Vad är det exakta värdet av cos 0°?","1",,,1;trigonometri
 
 m007,"Vad är det exakta värdet av cos 30°?","$\frac{\sqrt{3}}{2}$",,,1;trigonometri
 
 m008,"Vad är det exakta värdet av cos 45°?","$\frac{\sqrt{2}}{2}$",,,1;trigonometri
 
-m009,"Vad är det exakta värdet av cos 60°?",1/2,,,1;trigonometri
+m009,"Vad är det exakta värdet av cos 60°?","$\frac{1}{2}$",,,1;trigonometri
 
-m010,"Vad är det exakta värdet av cos 90°?",0,,,1;trigonometri
+m010,"Vad är det exakta värdet av cos 90°?","0",,,1;trigonometri
 
-m011,"Vad är komposantform?","En vektor skriven som en summa av basvektorer, t.ex. $u=3e_x+4e_y$.",,,1;trigonometri
+m011,"Vad är komponentform?","En vektor skriven som en summa av basvektorer, t.ex. $u=3e_x+4e_y$.",,,1;trigonometri
+
+m012,"Vad är koordinatform?","En vektor skriven med sina koordinater, t.ex. $(3,4)$.",,,1;trigonometri
+
+m013,"Vid algebraisk addition av vektorer måste vi...","... addera motsvarande komponenter var för sig.",,,1;trigonometri
+
+m014,"Vid grafisk addition av vektorer gör vi genom att...","... placera nästa vektors startpunkt i den föregående vektorns slutpunkt. Resultanten går från den första vektorns startpunkt till den sista vektorns slutpunkt.",,graf-vektoraddition.png,1;trigonometri
+
+m015,"Vad är en resultant?","Summan av två eller flera vektorer.",,,1;trigonometri
+
+m016,"Hur beräknas en vektors längd?","Med avståndsformeln eller Pythagoras sats.",,,1;trigonometri
+
+m017,"Vad betyder absolutbeloppet av en vektor?","Det är samma sak som vektorns längd eller belopp.",,,1;trigonometri
+
+m018,"Vad är en vektors riktning?","Vinkeln som vektorn bildar med den positiva x-axeln.",,,1;trigonometri
+
+m019,"Hur beräknas en vektors riktning?","Riktningsvinkeln kan beräknas med $\arctan\left(\frac{y}{x}\right)$ där $x$ och $y$ är vektorns koordinater.",,,1;trigonometri
+
+m020,"Vad är komponentuppdelning?","Att dela upp en vektor i dess x- och y-komponenter.",,,1;trigonometri
+
+m021,"Varför använder vi komponentuppdelning?","För att göra beräkningar med vektorer enklare.",,,1;trigonometri
+
+m022,"Vad är en enhetsvektor?","En vektor med längden 1.",,,1;trigonometri
+
+m023,"Vad beskriver koordinaterna $(x,y)$?","Vektorns x- och y-komponenter.",,,1;trigonometri
+
+m024,"Hur har vi definierat sinus?","Sinus för en vinkel i en rätvinklig triangel är kvoten mellan motstående katet och hypotenusan.",,sin.png,1;trigonometri
+
+m025,"Hur har vi definierat cosinus?","Cosinus för en vinkel i en rätvinklig triangel är kvoten mellan närliggande katet och hypotenusan.",,cos.png,1;trigonometri
+
+m026,"Hur har vi definierat tangens?","Tangens för en vinkel i en r
