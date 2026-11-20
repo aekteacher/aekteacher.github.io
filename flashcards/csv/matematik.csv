@@ -16,9 +16,9 @@ m014;Grafisk addition av vektorer gör vi genom att...;... placera nästa vektor
 m015;Vad är en resultant?;Summan av två eller flera vektorer.;;;”mate1,trigonometri”
 m016;Hur beräknas en vektors längd?;Med avståndsformeln eller Pythagoras sats.;;;”mate1,trigonometri”
 m017;Vad betyder absolutbeloppet av en vektor?;Det är samma sak som vektorns längd eller belopp.;;;”mate1,trigonometri”
-m018;Vad är en vektors riktning?;Vinkeln som vektorn bildar med den positiva x-axeln.;;;”mate1,trigonometri”
+m018;Vad är en vektors riktning?;Vinkeln som vektorn bildar med den positiva $x$-axeln.;;;”mate1,trigonometri”
 m019;Hur beräknas en vektors riktning?;Riktningsvinkeln kan beräknas med $\arctan\left(\frac{y}{x}\right)$ där $x$ och $y$ är vektorns koordinater.;;;”mate1,trigonometri”
-m020;Vad är komponentuppdelning?;Att dela upp en vektor i dess x- och y-komponenter.;;;”mate1,trigonometri”
+m020;Vad är komponentuppdelning?;Att dela upp en vektor i dess $x$- och $y$-komponenter.;;;”mate1,trigonometri”
 m021;Varför använder vi komponentuppdelning?;För att göra beräkningar med vektorer enklare.;;;”mate1,trigonometri”
 m022;Vad är en enhetsvektor?;En enhetsvektor är en vektor med längden 1 som anger en riktning.;;;”mate1,trigonometri”
 m023;Vad beskriver koordinaterna i $\vec{v}=(x,y)$?;Vektorns x- och y-komponenter.;;;”mate1,trigonometri”
