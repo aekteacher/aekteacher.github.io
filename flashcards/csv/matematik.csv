@@ -42,7 +42,7 @@ m020,"Vad är komposantuppdelning?","Att dela upp en vektor i dess x- och y-komp
 
 m021,"Varför använder vi komposantuppdelning?","För att göra beräkningar med vektorer enklare.",,,1;trigonometri
 
-m022,"Vad är en enhetsvektor?","En vektor med längden 1.",,,1;trigonometri
+m022,"Vad är en enhetsvektor?","En enhetsvektor är en vektor med längden 1 som anger en riktning.",,,1;trigonometri
 
 m023,"Vad beskriver koordinaterna $(x,y)$?","Vektorns x- och y-komponenter.",,,1;trigonometri
 
