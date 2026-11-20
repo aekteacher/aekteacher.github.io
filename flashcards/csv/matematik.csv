@@ -1,5 +1,4 @@
 id;question;answer;questionImage;answerImage;tags
-;;;;;
 m001;Vad är det exakta värdet av sin 0°?;0;;;mate1,trigonometri
 m002;Vad är det exakta värdet av sin 30°?;$\frac{1}{2}$;;;mate1,trigonometri
 m003;Vad är det exakta värdet av sin 45°?;$\frac{\sqrt{2}}{2}$;;;mate1,trigonometri
@@ -28,14 +27,12 @@ m025;Hur har vi definierat cosinus?;Cosinus för en vinkel i en rätvinklig tria
 m026;Hur har vi definierat tangens?;Tangens för en vinkel i en rätvinklig triangel är kvoten mellan motstående katet och närliggande katet. Tangens kan också uttryckas som $\frac{\sin(v)}{\cos(v)}$.;;tan.png;mate1,trigonometri
 m027;Vad är avståndsformeln?;Avståndet mellan två punkter i ett koordinatsystem kan beräknas med $\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$.;;;mate1,trigonometri
 m028;Hur bestämmer man längden av en vektor $\vec{v}=(x,y)$?;Genom att använda Pythagoras sats, $\|\vec{v}\|=\sqrt{x^2+y^2}$.;;;mate1,trigonometri
-;;;;;
 m029;På vilka två sätt kan mycket stora eller mycket små tal skrivas?;Grundpotensform eller prefixform.;;;mate1,aritmetik
 m030;Vad är en koefficient?;Talet som multipliceras med en variabel, till exempel 3 i $3x$.;;;mate1,funktioner
 m031;Vad är en variabel?;En bokstav som representerar ett okänt eller varierande värde, till exempel x eller y.;;;mate1,funktioner
 m032;Vad är en variabelterm?;En term som innehåller en variabel, till exempel $4x$ eller $-2y$.;;;mate1,funktioner
 m033;Vad är en konstantterm?;En term utan variabel, till exempel 7 i uttrycket $3x+7$.;;;mate1,funktioner
 m034;Vad är en konstant?;Ett fast värde som inte förändras, till exempel talet 5 eller bokstaven $a$.;;;mate1,funktioner
-;;;;;
 m035;Vad innebär kommutativitet?;Ordningen spelar ingen roll vid addition eller multiplikation, till exempel $A+B=B+A$.;;;mate1,aritmetik
 m036;Vad betyder prefixet Mega?;M, $10^6$, enhetsprefix.;;;mate1,aritmetik
 m037;Vad betyder prefixet Kilo?;k, $10^3$, enhetsprefix.;;;mate1,aritmetik
