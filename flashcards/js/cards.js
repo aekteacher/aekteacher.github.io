@@ -10,7 +10,7 @@ export async function loadSubjects() {
 }
 
 /**
- * Läs in ett ämnes CSV-fil
+ * Läs in en CSV-fil för valt ämne
  */
 export async function loadCards(subjectId) {
 
@@ -19,13 +19,13 @@ export async function loadCards(subjectId) {
             `csv/${subjectId}.csv`
         );
 
-if (!response.ok) {
+    if (!response.ok) {
 
-    throw new Error(
-        `Kunde inte läsa csv/${subjectId}.csv`
-    );
+        throw new Error(
+            `Kunde inte läsa csv/${subjectId}.csv`
+        );
 
-}
+    }
 
     const csv =
         await response.text();
@@ -36,6 +36,10 @@ if (!response.ok) {
             {
                 header: true,
                 skipEmptyLines: true,
+
+                // CSV använder ;
+                delimiter: ";",
+
                 transformHeader: header =>
                     header.trim()
             }
@@ -72,5 +76,3 @@ if (!response.ok) {
 
     }));
 }
-
-

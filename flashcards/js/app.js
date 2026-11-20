@@ -41,6 +41,9 @@ const emptyMessage =
 const progressBar =
     document.getElementById("progressBar");
 
+const progressText =
+    document.getElementById("progressText");
+
 const front =
     document.getElementById("front");
 
@@ -64,9 +67,6 @@ const importProgress =
 
 const randomMode =
     document.getElementById("randomMode");
-
-const progressText =
-    document.getElementById("progressText");
 
 let stats =
     load(
@@ -167,15 +167,16 @@ function createStudyQueue() {
             [...cards];
 
         for (
-            let i = studyQueue.length - 1;
+            let i =
+                studyQueue.length - 1;
             i > 0;
             i--
         ) {
 
             const j =
                 Math.floor(
-                    Math.random()
-                    * (i + 1)
+                    Math.random() *
+                    (i + 1)
                 );
 
             [
@@ -193,11 +194,17 @@ function createStudyQueue() {
 
         studyQueue =
             [...cards];
-
     }
 
     current = 0;
     studiedCount = 0;
+
+    if (progressBar) {
+
+        progressBar.style.width =
+            "0%";
+
+    }
 }
 
 function applyFilters() {
@@ -214,7 +221,7 @@ function applyFilters() {
 
                 const tags =
                     (card.tags || "")
-                    .split(";")
+                    .split(",")
                     .map(t => t.trim());
 
                 return tags.includes(tag);
@@ -222,7 +229,8 @@ function applyFilters() {
             });
 
         activeFilter.textContent =
-            "Aktivt filter: " + tag;
+            "Aktivt filter: " +
+            tag;
 
     }
     else {
@@ -246,7 +254,7 @@ function applyFilters() {
 function nextCard() {
 
     if (
-        !studyQueue.length
+        studyQueue.length === 0
     ) {
         return;
     }
@@ -278,12 +286,20 @@ function show() {
     );
 
     if (
-        !studyQueue.length
+        !studyQueue ||
+        studyQueue.length === 0
     ) {
 
         emptyMessage.classList.remove(
             "hidden"
         );
+
+        if (progressBar) {
+
+            progressBar.style.width =
+                "0%";
+
+        }
 
         return;
     }
@@ -314,7 +330,6 @@ function show() {
                 studiedCount,
                 studyQueue.length
             )} / ${studyQueue.length}`;
-
     }
 
     correctElement.textContent =
@@ -411,6 +426,7 @@ document
         "favorites",
         favorites
     );
+
 };
 
 document
@@ -428,6 +444,7 @@ document
     createStudyQueue();
 
     show();
+
 };
 
 document
@@ -445,15 +462,16 @@ document
     createStudyQueue();
 
     show();
+
 };
 
 searchBox.oninput =
     applyFilters;
 
 subjectSelect.onchange =
-    e =>
+    event =>
     loadSubject(
-        e.target.value
+        event.target.value
     );
 
 darkBtn.onclick =
@@ -471,10 +489,10 @@ exportBtn.onclick =
     });
 
 importProgress.onchange =
-    e => {
+    event => {
 
         const file =
-            e.target.files[0];
+            event.target.files[0];
 
         if (!file) {
             return;
@@ -484,11 +502,11 @@ importProgress.onchange =
             new FileReader();
 
         reader.onload =
-            event => {
+            loadEvent => {
 
                 const data =
                     JSON.parse(
-                        event.target.result
+                        loadEvent.target.result
                     );
 
                 save(
@@ -507,7 +525,6 @@ importProgress.onchange =
                 );
 
                 location.reload();
-
             };
 
         reader.readAsText(
