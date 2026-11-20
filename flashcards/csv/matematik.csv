@@ -1,77 +1,77 @@
 id;question;answer;questionImage;answerImage;tags
-m001;Vad är det exakta värdet av sin 0°?;0;;;"""mate1,trigonometri"""
-m002;Vad är det exakta värdet av sin 30°?;$\frac{1}{2}$;;;"""mate1,trigonometri"""
-m003;Vad är det exakta värdet av sin 45°?;$\frac{\sqrt{2}}{2}$;;;"""mate1,trigonometri"""
-m004;Vad är det exakta värdet av sin 60°?;$\frac{\sqrt{3}}{2}$;;;"""mate1,trigonometri"""
-m005;Vad är det exakta värdet av sin 90°?;1;;;"""mate1,trigonometri"""
-m006;Vad är det exakta värdet av cos 0°?;1;;;"""mate1,trigonometri"""
-m007;Vad är det exakta värdet av cos 30°?;$\frac{\sqrt{3}}{2}$;;;"""mate1,trigonometri"""
-m008;Vad är det exakta värdet av cos 45°?;$\frac{\sqrt{2}}{2}$;;;"""mate1,trigonometri"""
-m009;Vad är det exakta värdet av cos 60°?;$\frac{1}{2}$;;;"""mate1,trigonometri"""
-m010;Vad är det exakta värdet av cos 90°?;0;;;"""mate1,trigonometri"""
-m011;Vad är komponentform?;En vektor skriven som en summa av basvektorer, t.ex. $u=3e_x+4e_y$.;;;"""mate1,trigonometri"""
-m012;Vad är koordinatform?;En vektor skriven med sina koordinater, t.ex. $(3,4)$.;;;"""mate1,trigonometri"""
-m013;Vid algebraisk addition av vektorer måste vi...;... addera motsvarande komponenter var för sig.;;;"""mate1,trigonometri"""
-m014;Grafisk addition av vektorer gör vi genom att...;... placera nästa vektors startpunkt i den föregående vektorns slutpunkt. Resultanten går från den första vektorns startpunkt till den sista vektorns slutpunkt.;;graf-vektoraddition.png;"""mate1,trigonometri"""
-m015;Vad är en resultant?;Summan av två eller flera vektorer.;;;"""mate1,trigonometri"""
-m016;Hur beräknas en vektors längd?;Med avståndsformeln eller Pythagoras sats.;;;"""mate1,trigonometri"""
-m017;Vad betyder absolutbeloppet av en vektor?;Det är samma sak som vektorns längd eller belopp.;;;"""mate1,trigonometri"""
-m018;Vad är en vektors riktning?;Vinkeln som vektorn bildar med den positiva x-axeln.;;;"""mate1,trigonometri"""
-m019;Hur beräknas en vektors riktning?;Riktningsvinkeln kan beräknas med $\arctan\left(\frac{y}{x}\right)$ där $x$ och $y$ är vektorns koordinater.;;;"""mate1,trigonometri"""
-m020;Vad är komponentuppdelning?;Att dela upp en vektor i dess x- och y-komponenter.;;;"""mate1,trigonometri"""
-m021;Varför använder vi komponentuppdelning?;För att göra beräkningar med vektorer enklare.;;;"""mate1,trigonometri"""
-m022;Vad är en enhetsvektor?;En enhetsvektor är en vektor med längden 1 som anger en riktning.;;;"""mate1,trigonometri"""
-m023;Vad beskriver koordinaterna i $\vec{v}=(x,y)$?;Vektorns x- och y-komponenter.;;;"""mate1,trigonometri"""
-m024;Hur har vi definierat sinus?;Sinus för en vinkel i en rätvinklig triangel är kvoten mellan motstående katet och hypotenusan.;;sin.png;"""mate1,trigonometri"""
-m025;Hur har vi definierat cosinus?;Cosinus för en vinkel i en rätvinklig triangel är kvoten mellan närliggande katet och hypotenusan.;;cos.png;"""mate1,trigonometri"""
-m026;Hur har vi definierat tangens?;Tangens för en vinkel i en rätvinklig triangel är kvoten mellan motstående katet och närliggande katet. Tangens kan också uttryckas som $\frac{\sin(v)}{\cos(v)}$.;;tan.png;"""mate1,trigonometri"""
-m027;Vad är avståndsformeln?;Avståndet mellan två punkter i ett koordinatsystem kan beräknas med $\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$.;;;"""mate1,trigonometri"""
-m028;Hur bestämmer man längden av en vektor $\vec{v}=(x,y)$?;Genom att använda Pythagoras sats, $\|\vec{v}\|=\sqrt{x^2+y^2}$.;;;"""mate1,trigonometri"""
-m029;På vilka två sätt kan mycket stora eller mycket små tal skrivas?;Grundpotensform eller prefixform.;;;"""mate1,aritmetik"""
-m030;Vad är en koefficient?;Talet som multipliceras med en variabel, till exempel 3 i $3x$.;;;"""mate1,funktioner"""
-m031;Vad är en variabel?;En bokstav som representerar ett okänt eller varierande värde, till exempel x eller y.;;;"""mate1,funktioner"""
-m032;Vad är en variabelterm?;En term som innehåller en variabel, till exempel $4x$ eller $-2y$.;;;"""mate1,funktioner"""
-m033;Vad är en konstantterm?;En term utan variabel, till exempel 7 i uttrycket $3x+7$.;;;"""mate1,funktioner"""
-m034;Vad är en konstant?;Ett fast värde som inte förändras, till exempel talet 5 eller bokstaven $a$.;;;"""mate1,funktioner"""
-m035;Vad innebär kommutativitet?;Ordningen spelar ingen roll vid addition eller multiplikation, till exempel $A+B=B+A$.;;;"""mate1,aritmetik"""
-m036;Vad betyder prefixet Mega?;M, $10^6$, enhetsprefix.;;;"""mate1,aritmetik"""
-m037;Vad betyder prefixet Kilo?;k, $10^3$, enhetsprefix.;;;"""mate1,aritmetik"""
-m038;Vad betyder prefixet Hekto?;h, $10^2$, enhetsprefix.;;;"""mate1,aritmetik"""
-m039;Vad betyder prefixet Deka?;da, $10^1$, enhetsprefix.;;;"""mate1,aritmetik"""
-m040;Vad innebär associativitet?;Grupperingen spelar ingen roll, till exempel $(a+b)+c=a+(b+c)$.;;;"""mate1,aritmetik"""
-m041;Vad betyder prefixet Giga?;G, $10^9$, enhetsprefix.;;;"""mate1,aritmetik"""
-m042;Vad betyder prefixet Deci?;d, $10^{-1}$, enhetsprefix.;;;"""mate1,aritmetik"""
-m043;Vad betyder prefixet Centi?;c, $10^{-2}$, enhetsprefix.;;;"""mate1,aritmetik"""
-m044;Vad betyder prefixet Milli?;m, $10^{-3}$, enhetsprefix.;;;"""mate1,aritmetik"""
-m045;Vad betyder prefixet Nano?;n, $10^{-9}$, enhetsprefix.;;;"""mate1,aritmetik"""
-m046;Vad betyder prefixet Mikro?;μ, $10^{-6}$, enhetsprefix.;;;"""mate1,aritmetik"""
-m047;Vad är grundpotensform?;Skrivsätt för mycket stora eller små tal. Ett tal större än eller lika med 1 och mindre än 10 multipliceras med en tiopotens.;;;"""mate1,aritmetik"""
-m048;Vad är prefixform?;Skrivsätt för mycket stora eller små tal med hjälp av enhetsprefix, till exempel 54,3 MV.;;;"""mate1,aritmetik"""
-m049;Vad säger potenslagen för multiplikation?;$a^n \cdot a^m=a^{n+m}$.;;;"""mate1,aritmetik"""
-m050;Vad säger potenslagen för division?;$\frac{a^n}{a^m}=a^{n-m}$.;;;"""mate1,aritmetik"""
-m051;Vad är distributiva lagen?;Multiplikation är distributiv över addition: $a(b+c)=ab+ac$.;;;"""mate1,aritmetik"""
-m052;Vad säger potenslagen om dubbla exponenter?;$(a^n)^m=a^{n\cdot m}$.;;;"""mate1,aritmetik"""
-m053;Vad säger potenslagen om multiplikation i parentes?;$(ab)^n=a^n b^n$.;;;"""mate1,aritmetik"""
-m054;Vad säger potenslagen om bråk?;$\left(\frac{a}{b}\right)^n=\frac{a^n}{b^n}$.;;;"""mate1,aritmetik"""
-m055;Vad säger potenslagen om invers exponent?;$a^{-n}=\frac{1}{a^n}$.;;;"""mate1,aritmetik"""
-m056;Vilka fyra begrepp används för att uttrycka ett mätresultat?;Storhet, mätetal, prefix och enhet.;;;"""mate1,aritmetik"""
-m057;Hur tolkar vi riktningskoefficienten k?;Om $k>0$ är funktionen växande. Om $k<0$ är funktionen avtagande. Om $k=0$ är grafen horisontell.;;;"""mate1,funktioner"""
-m058;Vad betyder att en funktion är växande?;När x ökar så ökar även $f(x)$.;;;"""mate1,funktioner"""
-m059;Beskriv en linjär funktion.;$y=kx+m$ där $k$ är linjens lutning och $m$ är där linjen skär y-axeln.;;;"""mate1,funktioner"""
-m060;Vad är definitionsmängd?;De tillåtna värdena på den oberoende variabeln. De värden vi kan sätta in i funktionen.;;;"""mate1,funktioner"""
-m061;Vad är värdemängd?;De värden som funktionen kan få när vi använder alla värden från definitionsmängden.;;;"""mate1,funktioner"""
-m062;Hur avgör vi om två räta linjer är parallella?;Två olika räta linjer är parallella om de har samma riktningskoefficient. Alltså $k_1=k_2$.;;;"""mate1,funktioner"""
-m063;Hur avgör vi om två räta linjer är vinkelräta?;Två linjer är vinkelräta om vinkeln mellan dem är 90°. Då gäller att $k_1 \cdot k_2=-1$.;;;"""mate1,funktioner"""
-m064;Vad är vertikaltestet?;Om varje vertikal linje skär grafen i högst en punkt är grafen en funktion.;;;"""mate1,funktioner"""
-m065;Vilka fyra sätt har vi för att representera en funktion?;Graf, funktionsuttryck, beskrivning med ord och värdetabell.;;;"""mate1,funktioner"""
-m066;Vad är en exponentialfunktion?;$f(x)=C\cdot a^x$ där $a>0$.;;;"""mate1,funktioner"""
-m067;Hur ser en exponentialfunktion ut när $a>1$?;Funktionen växer.;;;"""mate1,funktioner"""
-m068;Hur ser en exponentialfunktion ut när $0<a<1$?;Funktionen avtar hela tiden men korsar inte x-axeln.;;;"""mate1,funktioner"""
-m069;Vad är en potensfunktion?;$f(x)=a\cdot x^p$ där $a\neq0$.;;;"""mate1,funktioner"""
-m070;Hur skriver man att $a$ är proportionell mot $b$ i kvadrat?;$a=k\cdot b^2$.;;;"""mate1,funktioner"""
-m071;Hur skriver man att $a$ är omvänt proportionell mot roten ur $b$?;$a=k\cdot\frac{1}{\sqrt{b}}$.;;;"""mate1,funktioner"""
-m072;Vad är en oberoende variabel?;En oberoende variabel är den variabel man väljer eller ändrar själv.;;;"""mate1,funktioner"""
-m073;Vad är en beroende variabel?;En beroende variabel är den variabel vars värde beror på den oberoende variabeln.;;;"""mate1,funktioner"""
-m074;Vad är en funktion?;En funktion är en regel som till varje värde på den oberoende variabeln tilldelar exakt ett värde på den beroende variabeln.;;;"""mate1,funktioner"""
-m075;Hur ritar vi att en ändpunkt är med i grafen?;En fylld cirkel.;;;"""mate1,funktioner"""
-m076;Hur ritar vi att en ändpunkt inte är med i grafen?;En tom cirkel.;;;"""mate1,funktioner"""
+m001;Vad är det exakta värdet av sin 0°?;0;;;”mate1,trigonometri”
+m002;Vad är det exakta värdet av sin 30°?;$\frac{1}{2}$;;;”mate1,trigonometri”
+m003;Vad är det exakta värdet av sin 45°?;$\frac{\sqrt{2}}{2}$;;;”mate1,trigonometri”
+m004;Vad är det exakta värdet av sin 60°?;$\frac{\sqrt{3}}{2}$;;;”mate1,trigonometri”
+m005;Vad är det exakta värdet av sin 90°?;1;;;”mate1,trigonometri”
+m006;Vad är det exakta värdet av cos 0°?;1;;;”mate1,trigonometri”
+m007;Vad är det exakta värdet av cos 30°?;$\frac{\sqrt{3}}{2}$;;;”mate1,trigonometri”
+m008;Vad är det exakta värdet av cos 45°?;$\frac{\sqrt{2}}{2}$;;;”mate1,trigonometri”
+m009;Vad är det exakta värdet av cos 60°?;$\frac{1}{2}$;;;”mate1,trigonometri”
+m010;Vad är det exakta värdet av cos 90°?;0;;;”mate1,trigonometri”
+m011;Vad är komponentform?;En vektor skriven som en summa av basvektorer, t.ex. $u=3e_x+4e_y$.;;;”mate1,trigonometri”
+m012;Vad är koordinatform?;En vektor skriven med sina koordinater, t.ex. $(3,4)$.;;;”mate1,trigonometri”
+m013;Vid algebraisk addition av vektorer måste vi...;... addera motsvarande komponenter var för sig.;;;”mate1,trigonometri”
+m014;Grafisk addition av vektorer gör vi genom att...;... placera nästa vektors startpunkt i den föregående vektorns slutpunkt. Resultanten går från den första vektorns startpunkt till den sista vektorns slutpunkt.;;graf-vektoraddition.png;”mate1,trigonometri”
+m015;Vad är en resultant?;Summan av två eller flera vektorer.;;;”mate1,trigonometri”
+m016;Hur beräknas en vektors längd?;Med avståndsformeln eller Pythagoras sats.;;;”mate1,trigonometri”
+m017;Vad betyder absolutbeloppet av en vektor?;Det är samma sak som vektorns längd eller belopp.;;;”mate1,trigonometri”
+m018;Vad är en vektors riktning?;Vinkeln som vektorn bildar med den positiva x-axeln.;;;”mate1,trigonometri”
+m019;Hur beräknas en vektors riktning?;Riktningsvinkeln kan beräknas med $\arctan\left(\frac{y}{x}\right)$ där $x$ och $y$ är vektorns koordinater.;;;”mate1,trigonometri”
+m020;Vad är komponentuppdelning?;Att dela upp en vektor i dess x- och y-komponenter.;;;”mate1,trigonometri”
+m021;Varför använder vi komponentuppdelning?;För att göra beräkningar med vektorer enklare.;;;”mate1,trigonometri”
+m022;Vad är en enhetsvektor?;En enhetsvektor är en vektor med längden 1 som anger en riktning.;;;”mate1,trigonometri”
+m023;Vad beskriver koordinaterna i $\vec{v}=(x,y)$?;Vektorns x- och y-komponenter.;;;”mate1,trigonometri”
+m024;Hur har vi definierat sinus?;Sinus för en vinkel i en rätvinklig triangel är kvoten mellan motstående katet och hypotenusan.;;sin.png;”mate1,trigonometri”
+m025;Hur har vi definierat cosinus?;Cosinus för en vinkel i en rätvinklig triangel är kvoten mellan närliggande katet och hypotenusan.;;cos.png;”mate1,trigonometri”
+m026;Hur har vi definierat tangens?;Tangens för en vinkel i en rätvinklig triangel är kvoten mellan motstående katet och närliggande katet. Tangens kan också uttryckas som $\frac{\sin(v)}{\cos(v)}$.;;tan.png;”mate1,trigonometri”
+m027;Vad är avståndsformeln?;Avståndet mellan två punkter i ett koordinatsystem kan beräknas med $\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$.;;;”mate1,trigonometri”
+m028;Hur bestämmer man längden av en vektor $\vec{v}=(x,y)$?;Genom att använda Pythagoras sats, $\|\vec{v}\|=\sqrt{x^2+y^2}$.;;;”mate1,trigonometri”
+m029;På vilka två sätt kan mycket stora eller mycket små tal skrivas?;Grundpotensform eller prefixform.;;;”mate1,aritmetik”
+m030;Vad är en koefficient?;Talet som multipliceras med en variabel, till exempel 3 i $3x$.;;;”mate1,funktioner”
+m031;Vad är en variabel?;En bokstav som representerar ett okänt eller varierande värde, till exempel x eller y.;;;”mate1,funktioner”
+m032;Vad är en variabelterm?;En term som innehåller en variabel, till exempel $4x$ eller $-2y$.;;;”mate1,funktioner”
+m033;Vad är en konstantterm?;En term utan variabel, till exempel 7 i uttrycket $3x+7$.;;;”mate1,funktioner”
+m034;Vad är en konstant?;Ett fast värde som inte förändras, till exempel talet 5 eller bokstaven $a$.;;;”mate1,funktioner”
+m035;Vad innebär kommutativitet?;Ordningen spelar ingen roll vid addition eller multiplikation, till exempel $A+B=B+A$.;;;”mate1,aritmetik”
+m036;Vad betyder prefixet Mega?;M, $10^6$, enhetsprefix.;;;”mate1,aritmetik”
+m037;Vad betyder prefixet Kilo?;k, $10^3$, enhetsprefix.;;;”mate1,aritmetik”
+m038;Vad betyder prefixet Hekto?;h, $10^2$, enhetsprefix.;;;”mate1,aritmetik”
+m039;Vad betyder prefixet Deka?;da, $10^1$, enhetsprefix.;;;”mate1,aritmetik”
+m040;Vad innebär associativitet?;Grupperingen spelar ingen roll, till exempel $(a+b)+c=a+(b+c)$.;;;”mate1,aritmetik”
+m041;Vad betyder prefixet Giga?;G, $10^9$, enhetsprefix.;;;”mate1,aritmetik”
+m042;Vad betyder prefixet Deci?;d, $10^{-1}$, enhetsprefix.;;;”mate1,aritmetik”
+m043;Vad betyder prefixet Centi?;c, $10^{-2}$, enhetsprefix.;;;”mate1,aritmetik”
+m044;Vad betyder prefixet Milli?;m, $10^{-3}$, enhetsprefix.;;;”mate1,aritmetik”
+m045;Vad betyder prefixet Nano?;n, $10^{-9}$, enhetsprefix.;;;”mate1,aritmetik”
+m046;Vad betyder prefixet Mikro?;μ, $10^{-6}$, enhetsprefix.;;;”mate1,aritmetik”
+m047;Vad är grundpotensform?;Skrivsätt för mycket stora eller små tal. Ett tal större än eller lika med 1 och mindre än 10 multipliceras med en tiopotens.;;;”mate1,aritmetik”
+m048;Vad är prefixform?;Skrivsätt för mycket stora eller små tal med hjälp av enhetsprefix, till exempel 54,3 MV.;;;”mate1,aritmetik”
+m049;Vad säger potenslagen för multiplikation?;$a^n \cdot a^m=a^{n+m}$.;;;”mate1,aritmetik”
+m050;Vad säger potenslagen för division?;$\frac{a^n}{a^m}=a^{n-m}$.;;;”mate1,aritmetik”
+m051;Vad är distributiva lagen?;Multiplikation är distributiv över addition: $a(b+c)=ab+ac$.;;;”mate1,aritmetik”
+m052;Vad säger potenslagen om dubbla exponenter?;$(a^n)^m=a^{n\cdot m}$.;;;”mate1,aritmetik”
+m053;Vad säger potenslagen om multiplikation i parentes?;$(ab)^n=a^n b^n$.;;;”mate1,aritmetik”
+m054;Vad säger potenslagen om bråk?;$\left(\frac{a}{b}\right)^n=\frac{a^n}{b^n}$.;;;”mate1,aritmetik”
+m055;Vad säger potenslagen om invers exponent?;$a^{-n}=\frac{1}{a^n}$.;;;”mate1,aritmetik”
+m056;Vilka fyra begrepp används för att uttrycka ett mätresultat?;Storhet, mätetal, prefix och enhet.;;;”mate1,aritmetik”
+m057;Hur tolkar vi riktningskoefficienten k?;Om $k>0$ är funktionen växande. Om $k<0$ är funktionen avtagande. Om $k=0$ är grafen horisontell.;;;”mate1,funktioner”
+m058;Vad betyder att en funktion är växande?;När x ökar så ökar även $f(x)$.;;;”mate1,funktioner”
+m059;Beskriv en linjär funktion.;$y=kx+m$ där $k$ är linjens lutning och $m$ är där linjen skär y-axeln.;;;”mate1,funktioner”
+m060;Vad är definitionsmängd?;De tillåtna värdena på den oberoende variabeln. De värden vi kan sätta in i funktionen.;;;”mate1,funktioner”
+m061;Vad är värdemängd?;De värden som funktionen kan få när vi använder alla värden från definitionsmängden.;;;”mate1,funktioner”
+m062;Hur avgör vi om två räta linjer är parallella?;Två olika räta linjer är parallella om de har samma riktningskoefficient. Alltså $k_1=k_2$.;;;”mate1,funktioner”
+m063;Hur avgör vi om två räta linjer är vinkelräta?;Två linjer är vinkelräta om vinkeln mellan dem är 90°. Då gäller att $k_1 \cdot k_2=-1$.;;;”mate1,funktioner”
+m064;Vad är vertikaltestet?;Om varje vertikal linje skär grafen i högst en punkt är grafen en funktion.;;;”mate1,funktioner”
+m065;Vilka fyra sätt har vi för att representera en funktion?;Graf, funktionsuttryck, beskrivning med ord och värdetabell.;;;”mate1,funktioner”
+m066;Vad är en exponentialfunktion?;$f(x)=C\cdot a^x$ där $a>0$.;;;”mate1,funktioner”
+m067;Hur ser en exponentialfunktion ut när $a>1$?;Funktionen växer.;;;”mate1,funktioner”
+m068;Hur ser en exponentialfunktion ut när $0<a<1$?;Funktionen avtar hela tiden men korsar inte x-axeln.;;;”mate1,funktioner”
+m069;Vad är en potensfunktion?;$f(x)=a\cdot x^p$ där $a\neq0$.;;;”mate1,funktioner”
+m070;Hur skriver man att $a$ är proportionell mot $b$ i kvadrat?;$a=k\cdot b^2$.;;;”mate1,funktioner”
+m071;Hur skriver man att $a$ är omvänt proportionell mot roten ur $b$?;$a=k\cdot\frac{1}{\sqrt{b}}$.;;;”mate1,funktioner”
+m072;Vad är en oberoende variabel?;En oberoende variabel är den variabel man väljer eller ändrar själv.;;;”mate1,funktioner”
+m073;Vad är en beroende variabel?;En beroende variabel är den variabel vars värde beror på den oberoende variabeln.;;;”mate1,funktioner”
+m074;Vad är en funktion?;En funktion är en regel som till varje värde på den oberoende variabeln tilldelar exakt ett värde på den beroende variabeln.;;;”mate1,funktioner”
+m075;Hur ritar vi att en ändpunkt är med i grafen?;En fylld cirkel.;;;”mate1,funktioner”
+m076;Hur ritar vi att en ändpunkt inte är med i grafen?;En tom cirkel.;;;”mate1,funktioner”
