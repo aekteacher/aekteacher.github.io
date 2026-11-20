@@ -8,7 +8,6 @@ import {
 from "./cards.js";
 
 import {
-    tagFilter,
     searchCards
 }
 from "./filters.js";
@@ -21,7 +20,11 @@ from "./importExport.js";
 
 let allCards = [];
 let cards = [];
+
+let studyQueue = [];
+
 let current = 0;
+let studiedCount = 0;
 
 const activeFilter =
     document.getElementById("activeFilter");
@@ -59,17 +62,32 @@ const exportBtn =
 const importProgress =
     document.getElementById("importProgress");
 
+const randomMode =
+    document.getElementById("randomMode");
+
+const progressText =
+    document.getElementById("progressText");
+
 let stats =
-    load("flashStats", {
-        correct: 0,
-        wrong: 0
-    });
+    load(
+        "flashStats",
+        {
+            correct: 0,
+            wrong: 0
+        }
+    );
 
 let favorites =
-    load("favorites", []);
+    load(
+        "favorites",
+        []
+    );
 
 let failed =
-    load("failed", []);
+    load(
+        "failed",
+        []
+    );
 
 function getTagFilter() {
 
@@ -138,6 +156,50 @@ async function loadSubject(id) {
     }
 }
 
+function createStudyQueue() {
+
+    if (
+        randomMode &&
+        randomMode.checked
+    ) {
+
+        studyQueue =
+            [...cards];
+
+        for (
+            let i = studyQueue.length - 1;
+            i > 0;
+            i--
+        ) {
+
+            const j =
+                Math.floor(
+                    Math.random()
+                    * (i + 1)
+                );
+
+            [
+                studyQueue[i],
+                studyQueue[j]
+            ] =
+            [
+                studyQueue[j],
+                studyQueue[i]
+            ];
+        }
+
+    }
+    else {
+
+        studyQueue =
+            [...cards];
+
+    }
+
+    current = 0;
+    studiedCount = 0;
+}
+
 function applyFilters() {
 
     cards = [...allCards];
@@ -147,16 +209,17 @@ function applyFilters() {
 
     if (tag) {
 
-        cards = cards.filter(card => {
+        cards =
+            cards.filter(card => {
 
-            const tags =
-                (card.tags || "")
-                .split(";")
-                .map(t => t.trim());
+                const tags =
+                    (card.tags || "")
+                    .split(";")
+                    .map(t => t.trim());
 
-            return tags.includes(tag);
+                return tags.includes(tag);
 
-        });
+            });
 
         activeFilter.textContent =
             "Aktivt filter: " + tag;
@@ -175,7 +238,31 @@ function applyFilters() {
             searchBox.value || ""
         );
 
-    current = 0;
+    createStudyQueue();
+
+    show();
+}
+
+function nextCard() {
+
+    if (
+        !studyQueue.length
+    ) {
+        return;
+    }
+
+    studiedCount++;
+
+    current++;
+
+    if (
+        current >=
+        studyQueue.length
+    ) {
+
+        createStudyQueue();
+
+    }
 
     show();
 }
@@ -190,7 +277,9 @@ function show() {
         "hidden"
     );
 
-    if (!cards.length) {
+    if (
+        !studyQueue.length
+    ) {
 
         emptyMessage.classList.remove(
             "hidden"
@@ -203,14 +292,30 @@ function show() {
         "hidden"
     );
 
-    render(cards[current]);
+    render(
+        studyQueue[current]
+    );
 
     progressBar.style.width =
         (
-            (current + 1)
-            / cards.length
+            Math.min(
+                studiedCount,
+                studyQueue.length
+            )
+            /
+            studyQueue.length
             * 100
         ) + "%";
+
+    if (progressText) {
+
+        progressText.textContent =
+            `${Math.min(
+                studiedCount,
+                studyQueue.length
+            )} / ${studyQueue.length}`;
+
+    }
 
     correctElement.textContent =
         stats.correct;
@@ -244,11 +349,8 @@ document
         stats
     );
 
-    current =
-        (current + 1)
-        % cards.length;
+    nextCard();
 
-    show();
 };
 
 document
@@ -258,7 +360,7 @@ document
     stats.wrong++;
 
     const id =
-        cards[current].id;
+        studyQueue[current].id;
 
     if (
         !failed.includes(id)
@@ -278,11 +380,8 @@ document
         stats
     );
 
-    current =
-        (current + 1)
-        % cards.length;
+    nextCard();
 
-    show();
 };
 
 document
@@ -290,7 +389,7 @@ document
 .onclick = () => {
 
     const id =
-        cards[current].id;
+        studyQueue[current].id;
 
     if (
         favorites.includes(id)
@@ -301,7 +400,8 @@ document
                 x => x !== id
             );
 
-    } else {
+    }
+    else {
 
         favorites.push(id);
 
@@ -325,7 +425,7 @@ document
             )
         );
 
-    current = 0;
+    createStudyQueue();
 
     show();
 };
@@ -342,7 +442,7 @@ document
             )
         );
 
-    current = 0;
+    createStudyQueue();
 
     show();
 };
@@ -376,7 +476,9 @@ importProgress.onchange =
         const file =
             e.target.files[0];
 
-        if (!file) return;
+        if (!file) {
+            return;
+        }
 
         const reader =
             new FileReader();
@@ -408,8 +510,23 @@ importProgress.onchange =
 
             };
 
-        reader.readAsText(file);
+        reader.readAsText(
+            file
+        );
 
     };
+
+if (randomMode) {
+
+    randomMode.onchange =
+        () => {
+
+            createStudyQueue();
+
+            show();
+
+        };
+
+}
 
 init();
