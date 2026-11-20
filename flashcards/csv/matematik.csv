@@ -1,12 +1,23 @@
 id,question,answer,questionImage,answerImage,tags
+
 m001,"Vad är det exakta värdet av sin 0°?",0,,,1;trigonometri
+
 m002,"Vad är det exakta värdet av sin 30°?",1/2,,,1;trigonometri
-m003,"Vad är det exakta värdet av sin 45°?",$√(2)/2$,,,1;trigonometri
-m004,"Vad är det exakta värdet av sin 60°?",$√(3)/2$,,,1;trigonometri
+
+m003,"Vad är det exakta värdet av sin 45°?","$\frac{\sqrt{2}}{2}$",,,1;trigonometri
+
+m004,"Vad är det exakta värdet av sin 60°?","$\frac{\sqrt{3}}{2}$",,,1;trigonometri
+
 m005,"Vad är det exakta värdet av sin 90°?",1,,,1;trigonometri
+
 m006,"Vad är det exakta värdet av cos 0°?",1,,,1;trigonometri
-m007,"Vad är det exakta värdet av cos 30°?",	$√(3)/2$,,,1;trigonometri
-m008,"Vad är det exakta värdet av cos 45°?",	$\sqrt(2)/2$,,,1;trigonometri
-m009,"Vad är det exakta värdet av cos 60°?",	1/2,,,1;trigonometri
-m010,"Vad är det exakta värdet av cos 90°?",	0,									,,1;trigonometri
-m011,"Vad är komposantform?",			"En vektor skriven som en summa av basvektorer t.ex. $u=3e_x+4e_y$.",	,,1;trigonometri
+
+m007,"Vad är det exakta värdet av cos 30°?","$\frac{\sqrt{3}}{2}$",,,1;trigonometri
+
+m008,"Vad är det exakta värdet av cos 45°?","$\frac{\sqrt{2}}{2}$",,,1;trigonometri
+
+m009,"Vad är det exakta värdet av cos 60°?",1/2,,,1;trigonometri
+
+m010,"Vad är det exakta värdet av cos 90°?",0,,,1;trigonometri
+
+m011,"Vad är komposantform?","En vektor skriven som en summa av basvektorer, t.ex. $u=3e_x+4e_y$.",,,1;trigonometri
