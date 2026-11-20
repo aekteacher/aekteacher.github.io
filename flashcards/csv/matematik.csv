@@ -50,4 +50,6 @@ m024,"Hur har vi definierat sinus?","Sinus för en vinkel i en rätvinklig trian
 
 m025,"Hur har vi definierat cosinus?","Cosinus för en vinkel i en rätvinklig triangel är kvoten mellan närliggande katet och hypotenusan.",,cos.png,1;trigonometri
 
-m026,"Hur har vi definierat tangens?","Tangens för en vinkel i en r
+m026,"Hur har vi definierat tangens?","Tangens för en vinkel i en rätvinklig triangel är kvoten mellan motstående katet och närliggande katet. Tangens kan också uttryckas som $\frac{\sin(v)}{\cos(v)}$.",,tan.png,1;trigonometri
+
+m027,"Vad är avståndsformeln?","Avståndet mellan två punkter i ett koordinatsystem kan beräknas med $\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$.",,,1;trigonometri
