@@ -1,6 +1,6 @@
 id;question;answer;questionImage;answerImage;tags
-m001;Vad är det exakta värdet av sin 0°?;0;;;mate1,trigonometri
-m002;Vad är det exakta värdet av sin 30°?;$\frac{1}{2}$;;;mate1,trigonometri
+m001;Vad är det exakta värdet av sin 0°?;0;;;"mate1,trigonometri"
+m002;Vad är det exakta värdet av sin 30°?;$\frac{1}{2}$;;;"mate1,trigonometri"
 m003;Vad är det exakta värdet av sin 45°?;$\frac{\sqrt{2}}{2}$;;;mate1,trigonometri
 m004;Vad är det exakta värdet av sin 60°?;$\frac{\sqrt{3}}{2}$;;;mate1,trigonometri
 m005;Vad är det exakta värdet av sin 90°?;1;;;mate1,trigonometri
@@ -57,7 +57,7 @@ m055;Vad säger potenslagen om invers exponent?;$a^{-n}=\frac{1}{a^n}$.;;;mate1,
 m056;Vilka fyra begrepp används för att uttrycka ett mätresultat?;Storhet, mätetal, prefix och enhet.;;;mate1,aritmetik
 m057;Hur tolkar vi riktningskoefficienten k?;Om $k>0$ är funktionen växande. Om $k<0$ är funktionen avtagande. Om $k=0$ är grafen horisontell.;;;mate1,funktioner
 m058;Vad betyder att en funktion är växande?;När x ökar så ökar även $f(x)$.;;;mate1,funktioner
-m059;Beskriv en linjär funktion.;$y=kx+m$ där $k$ är linjens lutning och $m$ är där linjen skär y-axeln.;;;mate1,funktioner
+m059;Beskriv en linjär funktion.;$y=kx+m$ där $k$ är linjens lutning och $m$ är där linjen skär y-axeln.;;;"mate1,funktioner"
 m060;Vad är definitionsmängd?;De tillåtna värdena på den oberoende variabeln. De värden vi kan sätta in i funktionen.;;;mate1,funktioner
 m061;Vad är värdemängd?;De värden som funktionen kan få när vi använder alla värden från definitionsmängden.;;;mate1,funktioner
 m062;Hur avgör vi om två räta linjer är parallella?;Två olika räta linjer är parallella om de har samma riktningskoefficient. Alltså $k_1=k_2$.;;;mate1,funktioner
