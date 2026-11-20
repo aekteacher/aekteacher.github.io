@@ -58,15 +58,15 @@ m028, "Hur bestämmer man längden av en vektor (x,y)?", "Genom att använda pyt
 
 m029,"På vilka två sätt kan mycket stora eller mycket små tal skrivas?","Grundpotensform eller prefixform.",,,1;aritmetik
 
-m030,"Vad är en koefficient?","Talet som multipliceras med en variabel, till exempel 3 i 3x.",,,1;funktioner
+m030,"Vad är en koefficient?","Talet som multipliceras med en variabel, till exempel 3 i $3x$.",,,1;funktioner
 
 m031,"Vad är en variabel?","En bokstav som representerar ett okänt eller varierande värde, till exempel x eller y.",,,1;funktioner
 
-m032,"Vad är en variabelterm?","En term som innehåller en variabel, till exempel 4x eller −2y.",,,1;funktioner
+m032,"Vad är en variabelterm?","En term som innehåller en variabel, till exempel $4x$ eller $−2y$.",,,1;funktioner
 
-m033,"Vad är en konstantterm?","En term utan variabel, till exempel 7 i uttrycket 3x+7.",,,1;funktioner
+m033,"Vad är en konstantterm?","En term utan variabel, till exempel 7 i uttrycket $3x+7$.",,,1;funktioner
 
-m034,"Vad är en konstant?","Ett fast värde som inte förändras, till exempel talet 5 eller bokstaven a.",,,1;funktioner
+m034,"Vad är en konstant?","Ett fast värde som inte förändras, till exempel talet 5 eller bokstaven $a$.",,,1;funktioner
 
 m035,"Vad innebär kommutativitet?","Ordningen spelar ingen roll vid addition eller multiplikation, till exempel $A+B=B+A$.",,,1;aritmetik
 
@@ -116,7 +116,7 @@ m057,"Hur tolkar vi riktningskoefficienten k?","Om $k>0$ är funktionen växande
 
 m058,"Vad betyder att en funktion är växande?","När x ökar så ökar även $f(x)$.",,,1;funktioner
 
-m059,"Beskriv en linjär funktion.","$y=kx+m$ där k är linjens lutning och m är där linjen skär y-axeln.",,,1;funktioner
+m059,"Beskriv en linjär funktion.","$y=kx+m$ där $k$ är linjens lutning och $m$ är där linjen skär $y$-axeln.",,,1;funktioner
 
 m060,"Vad är definitionsmängd?","De tillåtna värdena på den oberoende variabeln. De värden vi kan sätta in i funktionen.",,,1;funktioner
 
@@ -126,24 +126,28 @@ m062,"Hur avgör vi om två räta linjer är parallella?","Två olika räta linj
 
 m063,"Hur avgör vi om två räta linjer är vinkelräta?","Två linjer är vinkelräta om vinkeln mellan dem är 90°. Då gäller att $k_1 \\cdot k_2=-1$.",,,1;funktioner
 
-m064,"Vad är vertikaltestet?","Vertikaltestet används för att avgöra om en graf representerar en funktion. Om varje vertikal linje skär grafen i högst en punkt är grafen en funktion.",,,1;funktioner
+m064,"Vad är vertikaltestet?","Vertikaltestet används för att avgöra om en graf representerar en funktion. Om varje vertikal linje skär grafen i högst en punkt är grafen en funktion. Vertikaltestet kan genomföras med en linjal, lägg den parallell med $y$-axeln dra den längs $x$-axeln, om linjen bara skär grafen en gång vid varje läge så är det en funktion.",,,1;funktioner
 
 m065,"Vilka fyra sätt har vi för att representera en funktion?","Graf, funktionsuttryck, beskrivning med ord och värdetabell.",,,1;funktioner
 
 m066,"Vad är en exponentialfunktion?","$f(x)=C \\cdot a^x$ där $a>0$.",,,1;funktioner
 
-m067,"Hur ser en exponentialfunktion ut när a > 1?","Funktionen växer.",,,1;funktioner
+m067,"Hur ser en exponentialfunktion ut när $a>1$?","Funktionen växer.",,,1;funktioner
 
-m068,"Hur ser en exponentialfunktion ut när 0 < a < 1?","Funktionen avtar hela tiden men korsar inte x-axeln.",,,1;funktioner
+m068,"Hur ser en exponentialfunktion ut när $0<a<1$?","Funktionen avtar hela tiden men korsar inte $x$-axeln.",,,1;funktioner
 
 m069,"Vad är en potensfunktion?","$f(x)=a \\cdot x^p$ där $a \\neq 0$.",,,1;funktioner
 
-m070,"Hur skriver man att a är proportionell mot b i kvadrat?","$a=k \\cdot b^2$.",,,1;funktioner
+m070,"Hur skriver man att $a$ är proportionell mot $b$ i kvadrat?","$a=k \\cdot b^2$.",,,1;funktioner
 
-m071,"Hur skriver man att a är omvänt proportionell mot roten ur b?","$a=k \\cdot \\frac{1}{\\sqrt{b}}$.",,,1;funktioner
+m071,"Hur skriver man att $a$ är omvänt proportionell mot roten ur $b$?","$a=k \\cdot \\frac{1}{\\sqrt{b}}$.",,,1;funktioner
 
 m072,"Vad är en oberoende variabel?","En oberoende variabel är den variabel man väljer eller ändrar själv. Den påverkar den andra variabeln.",,,1;funktioner
 
 m073,"Vad är en beroende variabel?","En beroende variabel är den variabel vars värde beror på den oberoende variabeln.",,,1;funktioner
 
-m074,"Vad är en funktion?","En funktion är en regel som till varje värde på den oberoende variabeln (x) tilldelar exakt ett värde på den beroende variabeln (y).",,,1;funktioner
+m074,"Vad är en funktion?","En funktion är en regel som till varje värde på den oberoende variabeln, ofta $x$, tilldelar exakt ett värde på den beroende variabeln, ofta $y$.",,,1;funktioner
+
+m075, "Hur ritar vi att en ändpunkt är med i grafen?","En fylld cirkel",,,1;funktioner
+
+m076, "Hur ritar vi att en ändpunkt inte är med i grafen?,"En tom cirkel.",,,1;funktioner
