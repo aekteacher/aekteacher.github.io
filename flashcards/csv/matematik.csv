@@ -53,3 +53,59 @@ m025,"Hur har vi definierat cosinus?","Cosinus för en vinkel i en rätvinklig t
 m026,"Hur har vi definierat tangens?","Tangens för en vinkel i en rätvinklig triangel är kvoten mellan motstående katet och närliggande katet. Tangens kan också uttryckas som $\frac{\sin(v)}{\cos(v)}$.",,tan.png,1;trigonometri
 
 m027,"Vad är avståndsformeln?","Avståndet mellan två punkter i ett koordinatsystem kan beräknas med $\sqrt{(x_2-x_1)^2+(y_2-y_1)^2}$.",,,1;trigonometri
+
+m028,"Vilka fyra begrepp används för att uttrycka ett mätresultat?","Storhet, mätetal, prefix och enhet.",,,1;aritmetik
+
+m029,"På vilka två sätt kan mycket stora eller mycket små tal skrivas?","Grundpotensform eller prefixform.",,,1;aritmetik
+
+m030,"Vad är en koefficient?","Talet som multipliceras med en variabel, till exempel 3 i 3x.",,,1;aritmetik
+
+m031,"Vad är en variabel?","En bokstav som representerar ett okänt eller varierande värde, till exempel x eller y.",,,1;aritmetik
+
+m032,"Vad är en variabelterm?","En term som innehåller en variabel, till exempel 4x eller −2y.",,,1;aritmetik
+
+m033,"Vad är en konstantterm?","En term utan variabel, till exempel 7 i uttrycket 3x+7.",,,1;aritmetik
+
+m034,"Vad är en konstant?","Ett fast värde som inte förändras, till exempel talet 5 eller bokstaven a.",,,1;aritmetik
+
+m035,"Vad innebär kommutativitet?","Ordningen spelar ingen roll vid addition eller multiplikation, till exempel $A+B=B+A$.",,,1;aritmetik
+
+m036,"Vad betyder prefixet Mega?","M, $10^6$, enhetsprefix.",,,1;aritmetik
+
+m037,"Vad betyder prefixet Kilo?","k, $10^3$, enhetsprefix.",,,1;aritmetik
+
+m038,"Vad betyder prefixet Hekto?","h, $10^2$, enhetsprefix.",,,1;aritmetik
+
+m039,"Vad betyder prefixet Deka?","da, $10^1$, enhetsprefix.",,,1;aritmetik
+
+m040,"Vad innebär associativitet?","Grupperingen spelar ingen roll, till exempel $(a+b)+c=a+(b+c)$.",,,1;aritmetik
+
+m041,"Vad betyder prefixet Giga?","G, $10^9$, enhetsprefix.",,,1;aritmetik
+
+m042,"Vad betyder prefixet Deci?","d, $10^{-1}$, enhetsprefix.",,,1;aritmetik
+
+m043,"Vad betyder prefixet Centi?","c, $10^{-2}$, enhetsprefix.",,,1;aritmetik
+
+m044,"Vad betyder prefixet Milli?","m, $10^{-3}$, enhetsprefix.",,,1;aritmetik
+
+m045,"Vad betyder prefixet Nano?","n, $10^{-9}$, enhetsprefix.",,,1;aritmetik
+
+m046,"Vad betyder prefixet Mikro?","μ, $10^{-6}$, enhetsprefix.",,,1;aritmetik
+
+m047,"Vad är grundpotensform?","Skrivsätt för mycket stora eller små tal. Ett tal större än eller lika med 1 och mindre än 10 multipliceras med en tiopotens.",,,1;aritmetik
+
+m048,"Vad är prefixform?","Skrivsätt för mycket stora eller små tal med hjälp av enhetsprefix, till exempel 54,3 MV.",,,1;aritmetik
+
+m049,"Vad säger potenslagen för multiplikation?","$a^n \\cdot a^m = a^{n+m}$ . Samma bas innebär att exponenterna adderas.",,,1;aritmetik
+
+m050,"Vad säger potenslagen för division?","$\\frac{a^n}{a^m}=a^{n-m}$.",,,1;aritmetik
+
+m051,"Vad är distributiva lagen?","Multiplikation är distributiv över addition: $a(b+c)=ab+ac$.",,,1;aritmetik
+
+m052,"Vad säger potenslagen om dubbla exponenter?","$(a^n)^m=a^{n\\cdot m}$.",,,1;aritmetik
+
+m053,"Vad säger potenslagen om multiplikation i parentes?","$(a\\cdot b)^n=a^n\\cdot b^n$.",,,1;aritmetik
+
+m054,"Vad säger potenslagen om bråk?","$\\left(\\frac{a}{b}\\right)^n=\\frac{a^n}{b^n}$.",,,1;aritmetik
+
+m055,"Vad säger potenslagen om invers exponent?","$a^{-n}=\\frac{1}{a^n}$.",,,1;aritmetik
